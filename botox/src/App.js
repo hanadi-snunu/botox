@@ -1,23 +1,34 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import { Routes, Route } from "react-router-dom";
+import Navbar from "./component/layout/Navbar";
+import Hem from "./component/js/Hem";
+import Behandlingsutbud from "./component/js/behandlingsutbud/Behandlingsutbud";
+import Huvudbehandling from "./component/js/Huvudbehandlingar";
+import Underbehandling from "./component/js/behandlingsutbud/Underbehandlingar";
+import Hittabehandling from "./component/js/HittaBehandling";
+import Kontakt from "./component/js/Kontakt";
+import Omoss from "./component/js/Omoss";
+import Priser from "./component/js/Priser";
+import Utbildning from "./component/js/Utbildningar";
+import Namnbehandling from "./component/js/behandlingsutbud/Namnbehandlingar";
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Navbar />
+      <Routes>
+        <Route path="/" element={<Hem />} />
+        <Route path="/Behandlingsutbud" element={<Behandlingsutbud />} />
+        <Route path="/Huvudbehandlingar" element={<Huvudbehandling />} />
+        <Route path="/Namnbehandlingar" element={<Namnbehandling />} />
+        <Route path="/Underbehandlingar" element={<Underbehandling />} />
+        <Route path="/Hittabehandling" element={<Hittabehandling />} />
+        <Route path="/Kontakt" element={<Kontakt />} />
+        <Route path="/Omoss" element={<Omoss />} />
+        <Route path="/Priser" element={<Priser />} />
+        <Route path="/Utbildningar" element={<Utbildning />} />
+      </Routes>
     </div>
   );
 }
