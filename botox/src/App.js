@@ -1,5 +1,5 @@
 import React from "react";
-import { Routes, Route } from "react-router-dom";
+import { HashRouter as Routes, Route } from "react-router-dom";
 import Navbar from "./component/layout/Navbar";
 import Hem from "./component/js/Hem";
 import Behandlingsutbud from "./component/js/behandlingsutbud/Behandlingsutbud";
