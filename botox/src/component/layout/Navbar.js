@@ -48,7 +48,7 @@ const Navbar = () => {
       <div className="navbar-top">
         <div className="logo">
           <Link to="/">
-            <h1>House</h1>
+            <h1>Houseofaesthetics</h1>
           </Link>
         </div>
         <div className="contact-info">
