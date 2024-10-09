@@ -12,6 +12,8 @@ import Omoss from "./component/js/Omoss";
 import Priser from "./component/js/Priser";
 import Utbildning from "./component/js/Utbildningar";
 import Namnbehandling from "./component/js/behandlingsutbud/Namnbehandlingar";
+import BokaTid from "./component/js/Bokatid";
+import Integritetspolicy from "./component/js/Integritetspolicy";
 import "./App.css";
 
 function App() {
@@ -30,6 +32,8 @@ function App() {
           <Route path="/Omoss" element={<Omoss />} />
           <Route path="/Priser" element={<Priser />} />
           <Route path="/Utbildningar" element={<Utbildning />} />
+          <Route path="/Bokatid" element={<BokaTid />} />
+          <Route path="/Integritetspolicy" element={<Integritetspolicy />} />
           <Route path="/" element={<Hem />} /> {/* Standardroute till Hem */}
         </Routes>
       </div>

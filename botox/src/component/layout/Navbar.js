@@ -20,8 +20,10 @@ const Navbar = () => {
           </Link>
         </div>
         <div className="contact-info">
-          <span>tel: 070 - 20 40 998</span>
-          <button className="book-btn">Boka tid</button>
+          <span>tel: 073 - 66 67 432</span>
+          <Link to="/Bokatid">
+  <button className="book-btn">Boka tid</button>
+</Link>
         </div>
         {/* Hamburgermeny för mobila enheter */}
         <div className="menu-icon" onClick={toggleMenu}>

@@ -39,7 +39,8 @@
   
   .footer-links a {
     display: block;
-    margin-bottom: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
     font-size: 12px;
     color: #666;
     text-decoration: none;
@@ -81,23 +82,27 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-top: 20px;
+    padding-top: 50px ;
   }
   
-  .footer-social {
+ 
+.footer-social {
     display: flex;
     margin-bottom: 20px;
+    justify-content: center; 
   }
   
   .footer-icon {
-    font-size: 20px;
-    margin: 0 10px;
-    color: #333;
+    font-size: 50p ; 
+    margin: 0 5px; 
+    color: #000 !important; 
     text-decoration: none;
+    transition: transform 0.2s ease, color 0.3s ease;
   }
   
   .footer-icon:hover {
-    color: #0077b5; /* Anpassa färgen till dina sociala medier */
+    color: #000; 
+    transform: scale(1.1); 
   }
   
   .footer-bottom p {
@@ -116,6 +121,7 @@
     text-decoration: underline;
   }
   
+
   /* Mobilanpassning */
   @media (max-width: 768px) {
     .footer-top {

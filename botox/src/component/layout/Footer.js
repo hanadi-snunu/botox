@@ -1,5 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faFacebookF, faInstagram } from '@fortawesome/free-brands-svg-icons';
 import '../css/Footer.css';
 
 const Footer = () => {
@@ -7,27 +9,20 @@ const Footer = () => {
     <footer className="footer-container">
       <div className="footer-top">
         <div className="footer-logo">
-          {/* Länk till startsidan */}
           <Link to="/" className="footer-logo-link">
             Houseofaesthetics
           </Link>
-        </div>
         <div className="footer-links">
-          <Link to="/boka-tid">BOKA TID</Link>
-          <Link to="/kontakt">KONTAKT</Link>
+          <Link to="/Bokatid">BOKA TID</Link>
+          <Link to="/Kontakt">KONTAKT</Link>
+        </div>
         </div>
         <div className="footer-locations">
           <div className="location">
-            <h4>Svenska Hudkliniker Stockholm</h4>
-            <p>Humlegårdsgatan 13<br />114 46 Stockholm</p>
-            <p><a href="tel:0102040998">010 - 20 40 998</a></p>
-            <p><a href="mailto:info@svenskahudkliniker.se">info@svenskahudkliniker.se</a></p>
-          </div>
-          <div className="location">
-            <h4>Svenska Hudkliniker Karlstad</h4>
-            <p>Järnvägsgatan 10<br />652 25 Karlstad</p>
-            <p><a href="tel:0102040998">010 - 20 40 998</a></p>
-            <p><a href="mailto:info@svenskahudkliniker.se">info@svenskahudkliniker.se</a></p>
+            <h4>House Of Aesthetics</h4>
+            <p>Djäknegatan 4 <br />211 35 Malmö</p>
+            <p><a href="tel:0102040998">073-666 74 32</a></p>
+            <p><a href="mailto:houseofaesthetics.se@hotmail.com">houseofaesthetics.se@hotmail.com</a></p>
           </div>
         </div>
       </div>
@@ -35,10 +30,10 @@ const Footer = () => {
         <div className="footer-social">
           {/* Sociala ikoner */}
           <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="footer-icon">
-            <i className="fab fa-facebook-f"></i>
+            <FontAwesomeIcon icon={faFacebookF} />
           </a>
           <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="footer-icon">
-            <i className="fab fa-instagram"></i>
+            <FontAwesomeIcon icon={faInstagram} />
           </a>
         </div>
         <Link to="/integritetspolicy">Integritetspolicy</Link>
