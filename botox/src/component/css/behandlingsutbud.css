@@ -1,0 +1,57 @@
+/* Container för hela Behandlingsutbud-sidan */
+.behandlingsutbud-container {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Sektion 1 */
+  .section-one {
+    position: relative;
+    width: 100%;
+    height: 100vh; /* Full höjd för hela skärmen */
+  }
+  
+  .section-one-image {    
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .section-one-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5); /* Transparent bakgrund */
+    padding: 20px;
+    border-radius: 8px;
+  }
+  
+  .section-one-title {
+    font-size: 48px;
+    margin-bottom: 20px;
+  }
+  
+  .section-one-text {
+    font-size: 18px;
+    margin-bottom: 30px;
+  }
+  
+  .section-one-button {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: #000;
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .section-one-button:hover {
+    background-color: #444;
+  }
+  
