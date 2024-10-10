@@ -1,57 +1,169 @@
-/* Container för hela Behandlingsutbud-sidan */
-.behandlingsutbud-container {
+/* Behandlingsutbud.css */
+
+/* Första sektionen - fullbredd bild */
+.fullwidth-section {
+    height: 70vh; /* Täck hela höjden av skärmen */
     width: 100%;
-    margin: 0;
-    padding: 0;
+    background-size: cover; /* Gör så att bilden täcker hela sektionen */
+    background-position: center; /* Centrera bilden */
+    position: relative; /* För att overlay ska fungera */
+    display: flex;
+    justify-content: flex-start; /* Flytta innehållet till vänster */
+    align-items: center;
+    padding-left: 10%; /* Flytta innehållet lite från kanten */
+    overflow: hidden; /* Döljer innehåll som sträcker sig utanför */
+    box-sizing: border-box; /* Inkluderar padding i total bredd */
+    
   }
   
-  /* Sektion 1 */
-  .section-one {
-    position: relative;
-    width: 100%;
-    height: 100vh; /* Full höjd för hela skärmen */
-  }
-  
-  .section-one-image {    
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
-  
-  .section-one-content {
+  .overlay {
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    color: white;
-    background-color: rgba(0, 0, 0, 0.5); /* Transparent bakgrund */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.4); /* Lätt mörkläggning över bilden */
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Flytta innehållet uppåt */
     padding: 20px;
-    border-radius: 8px;
+    overflow: hidden;
   }
   
-  .section-one-title {
-    font-size: 48px;
-    margin-bottom: 20px;
+  /* Nytt block för att hantera rubrik, text och knapp tillsammans */
+  .content-block {
+    padding: 30px;
+    border-radius: 10px;
+    text-align: left; /* Vänsterjustera texten */
+    color: white;
+    margin-left: -600px;
+    
   }
   
-  .section-one-text {
-    font-size: 18px;
-    margin-bottom: 30px;
+  .section-titlee {
+    font: 30px "Old Standard TT", Serif;
+    margin-bottom: 40px;
+    margin-top: 60px;
+    color: white;
   }
   
-  .section-one-button {
-    display: inline-block;
-    padding: 15px 30px;
-    background-color: #000;
-    color: #fff;
+  .section-subtitle {
+    font: 16px Mulish, sans-serif;
+    margin-bottom: 60px;
+    max-width: 600px; /* Mindre bredd på texten */
+    line-height: 1.6;
+  }
+  
+  .section-button {
+    padding: 10px 30px;
+    font-size: 1rem;
+    background-color: #4a4a4a; /* Bakgrundsfärg för knappen */
+    color: white;
     text-decoration: none;
-    font-size: 18px;
     border-radius: 5px;
     transition: background-color 0.3s ease;
   }
   
-  .section-one-button:hover {
-    background-color: #444;
+  .section-button:hover {
+    background-color: #333; /* Mörkare färg vid hovring */
+  }
+  
+
+/* SEKTION 2 */
+
+.section-two {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 70px 20%; /* Justera padding efter behov */
+    background-color: #f9f9f9; /* En ljus bakgrundsfärg för sektionen */
+  }
+  
+  .image-container {
+    flex: 1; /* Bilden tar upp 50% av bredden */
+    margin-right: 20px; /* Avstånd mellan bild och text */
+  }
+  
+  .section-image {
+    width: 100%; /* Minska bildens bredd till 50% av sin container */
+    max-width: 400px; /* Maxbredd för bilden */
+    height: auto; /* Bevara bildens proportioner */
+    
+  }
+  
+  .text-container {
+    flex: 1; /* Texten tar upp 50% av bredden */
+    max-width: 50%; /* Begränsa textens bredd */
+    padding-left: 20px;
+    margin-top: -10px;
+  }
+  
+  .section-title {
+    
+    margin-bottom: 40px;
+    font: 25px "Old Standard TT", serif;
+    color: #4a4a4a;
+  }
+  
+  .section-text {
+    font: 16px Mulish, sans-serif;
+    line-height: 1.6;
+    max-width: 600px; /* Begränsa textens bredd */
+    color: #4a4a4a;
+  }
+  
+
+  /* Anpassa för mindre skärmar */
+  @media (max-width: 768px) {
+    .fullwidth-section {
+      height: 50vh; /* Minska höjden för mobil */
+      padding-left: 20px; /* Mindre padding */
+    }
+  
+    .content-block {
+      padding: 20px;
+      margin-left: 0;
+    }
+  
+    .section-title {
+      font-size: 2.5rem; /* Minska rubrikstorleken */
+    }
+  
+    .section-subtitle {
+      font-size: 1rem; /* Minska textstorleken */
+    }
+  }
+
+  /* Anpassa för mindre skärmar */
+@media (max-width: 768px) {
+    .section-two {
+      flex-direction: column; /* Stapla bild och text vertikalt */
+      padding: 30px 10%; /* Mindre padding */
+    }
+  
+    .image-container {
+      margin-right: 0; /* Ta bort höger marginal för att centrera bilden */
+      margin-bottom: 20px; /* Avstånd mellan bild och text */
+      text-align: center; /* Centrera bilden */
+    }
+  
+    .section-image {
+      max-width: 300px; /* Justera maxbredd på bilden */
+    }
+  
+    .text-container {
+      max-width: 100%; /* Ta bort begränsningen på bredd */
+      padding-left: 0; /* Ta bort vänster padding */
+      text-align: center; /* Centrera texten */
+    }
+  
+    .section-title {
+      font-size: 1.8rem; /* Minska rubrikstorleken */
+    }
+  
+    .section-text {
+      font-size: 1rem; /* Minska textstorleken */
+      margin-top: 20px; /* Lägg till avstånd till rubrik */
+    }
   }
   
