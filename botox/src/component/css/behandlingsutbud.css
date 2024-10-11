@@ -1,169 +1,318 @@
-/* Behandlingsutbud.css */
+/* Grundläggande stilar */
+body, html {
+    overflow-x: hidden; /* Förhindra horisontell scroll */
+    margin: 0;
+    padding: 0;
+}
 
-/* Första sektionen - fullbredd bild */
-.fullwidth-section {
-    height: 70vh; /* Täck hela höjden av skärmen */
+/* Hero Section */
+.hero-section {
+    height: 70vh;
     width: 100%;
-    background-size: cover; /* Gör så att bilden täcker hela sektionen */
-    background-position: center; /* Centrera bilden */
-    position: relative; /* För att overlay ska fungera */
+    background-size: cover;
+    background-position: center;
+    position: relative;
     display: flex;
-    justify-content: flex-start; /* Flytta innehållet till vänster */
+    justify-content: flex-start;
     align-items: center;
-    padding-left: 10%; /* Flytta innehållet lite från kanten */
-    overflow: hidden; /* Döljer innehåll som sträcker sig utanför */
-    box-sizing: border-box; /* Inkluderar padding i total bredd */
-    
-  }
-  
-  .overlay {
+    padding-left: 10%;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+.hero-overlay {
     position: absolute;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
-    background: rgba(0, 0, 0, 0.4); /* Lätt mörkläggning över bilden */
+    background: rgba(0, 0, 0, 0.4);
     display: flex;
     justify-content: center;
-    align-items: flex-start; /* Flytta innehållet uppåt */
+    align-items: flex-start;
     padding: 20px;
-    overflow: hidden;
-  }
-  
-  /* Nytt block för att hantera rubrik, text och knapp tillsammans */
-  .content-block {
+}
+
+.hero-content {
     padding: 30px;
     border-radius: 10px;
-    text-align: left; /* Vänsterjustera texten */
+    text-align: left;
     color: white;
     margin-left: -600px;
-    
-  }
-  
-  .section-titlee {
+}
+
+.hero-title {
     font: 30px "Old Standard TT", Serif;
     margin-bottom: 40px;
     margin-top: 60px;
     color: white;
-  }
-  
-  .section-subtitle {
+}
+
+.hero-subtitle {
     font: 16px Mulish, sans-serif;
     margin-bottom: 60px;
-    max-width: 600px; /* Mindre bredd på texten */
+    max-width: 600px;
     line-height: 1.6;
-  }
-  
-  .section-button {
+}
+
+.hero-button {
     padding: 10px 30px;
     font-size: 1rem;
-    background-color: #4a4a4a; /* Bakgrundsfärg för knappen */
+    background-color: #4a4a4a;
     color: white;
     text-decoration: none;
     border-radius: 5px;
     transition: background-color 0.3s ease;
-  }
-  
-  .section-button:hover {
-    background-color: #333; /* Mörkare färg vid hovring */
-  }
-  
+}
 
-/* SEKTION 2 */
+.hero-button:hover {
+    background-color: #333;
+}
 
-.section-two {
+/* Health Section */
+.health-section {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 70px 20%; /* Justera padding efter behov */
-    background-color: #f9f9f9; /* En ljus bakgrundsfärg för sektionen */
-  }
-  
-  .image-container {
-    flex: 1; /* Bilden tar upp 50% av bredden */
-    margin-right: 20px; /* Avstånd mellan bild och text */
-  }
-  
-  .section-image {
-    width: 100%; /* Minska bildens bredd till 50% av sin container */
-    max-width: 400px; /* Maxbredd för bilden */
-    height: auto; /* Bevara bildens proportioner */
-    
-  }
-  
-  .text-container {
-    flex: 1; /* Texten tar upp 50% av bredden */
-    max-width: 50%; /* Begränsa textens bredd */
+    padding: 70px 20%;
+    background-color: white;
+}
+
+.health-image-container {
+    flex: 1;
+    margin-right: 20px;
+}
+
+.health-image {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+}
+
+.health-text-container {
+    flex: 1;
+    max-width: 50%;
     padding-left: 20px;
     margin-top: -10px;
-  }
-  
-  .section-title {
-    
+}
+
+.health-title {
     margin-bottom: 40px;
     font: 25px "Old Standard TT", serif;
     color: #4a4a4a;
-  }
-  
-  .section-text {
+}
+
+.health-description {
     font: 16px Mulish, sans-serif;
     line-height: 1.6;
-    max-width: 600px; /* Begränsa textens bredd */
+    max-width: 600px;
     color: #4a4a4a;
-  }
-  
+}
 
-  /* Anpassa för mindre skärmar */
-  @media (max-width: 768px) {
-    .fullwidth-section {
-      height: 50vh; /* Minska höjden för mobil */
-      padding-left: 20px; /* Mindre padding */
-    }
-  
-    .content-block {
-      padding: 20px;
-      margin-left: 0;
-    }
-  
-    .section-title {
-      font-size: 2.5rem; /* Minska rubrikstorleken */
-    }
-  
-    .section-subtitle {
-      font-size: 1rem; /* Minska textstorleken */
-    }
-  }
+/* Treatments Section */
+.treatments-section {
+    padding: 70px 20px;
+    background-color: white;
+    text-align: center;
+}
 
-  /* Anpassa för mindre skärmar */
+.treatments-button-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.treatments-button {
+    padding: 15px 30px;
+    font-size: 1rem;
+    background-color: #f5f5f5;
+    color: #4a4a4a;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.treatments-button:hover {
+    background-color: #d3d3d3;
+}
+
+/* Consultation Section */
+.consultation-section {
+    height: 50vh;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.consultation-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.consultation-content {
+    color: white;
+    text-align: center;
+    padding: 30px;
+    border-radius: 10px;
+    max-width: 700px;
+}
+
+.consultation-title {
+    font: 30px "Old Standard TT", Serif;
+    margin-bottom: 40px;
+    margin-top: 60px;
+    color: white;
+}
+
+.consultation-description {
+    font: 16px Mulish, sans-serif;
+    margin-bottom: 60px;
+    max-width: 600px;
+    line-height: 1.6;
+}
+
+.consultation-button {
+    padding: 10px 30px;
+    font-size: 1rem;
+    background-color: #4a4a4a;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.consultation-button:hover {
+    background-color: #333;
+}
+
+
+/* Anpassa för mindre skärmar */
 @media (max-width: 768px) {
-    .section-two {
-      flex-direction: column; /* Stapla bild och text vertikalt */
-      padding: 30px 10%; /* Mindre padding */
+    /* Hero Section Anpassning */
+    .hero-section {
+        height: 55vh; /* Minska höjden för mobil */
+        padding-left: 20px; /* Mindre padding */
     }
-  
-    .image-container {
-      margin-right: 0; /* Ta bort höger marginal för att centrera bilden */
-      margin-bottom: 20px; /* Avstånd mellan bild och text */
-      text-align: center; /* Centrera bilden */
+
+    .hero-content {
+        padding: 20px;
+        margin-left: 0; /* Ta bort margin för att centrera */
+        text-align: center; /* Centrera innehållet */
     }
-  
-    .section-image {
-      max-width: 300px; /* Justera maxbredd på bilden */
+
+    .hero-title {
+        font-size: 2.5rem; /* Minska rubrikstorleken */
     }
-  
-    .text-container {
-      max-width: 100%; /* Ta bort begränsningen på bredd */
-      padding-left: 0; /* Ta bort vänster padding */
-      text-align: center; /* Centrera texten */
+
+    .hero-subtitle {
+        font-size: 1rem; /* Minska textstorleken */
+        
     }
-  
-    .section-title {
-      font-size: 1.8rem; /* Minska rubrikstorleken */
+
+    .hero-button {
+        margin: 20px auto; /* Centrera knappen */
+       
     }
-  
-    .section-text {
-      font-size: 1rem; /* Minska textstorleken */
-      margin-top: 20px; /* Lägg till avstånd till rubrik */
+
+    /* Health Section Anpassning */
+    .health-section {
+        flex-direction: column; /* Stapla bild och text vertikalt */
+        padding: 30px 10%; /* Mindre padding */
     }
-  }
-  
+
+    .health-image-container {
+        margin-right: 0; /* Ta bort höger marginal för att centrera bilden */
+        margin-bottom: 20px; /* Avstånd mellan bild och text */
+        text-align: center; /* Centrera bilden */
+    }
+
+    .health-image {
+        max-width: 300px; /* Justera maxbredd på bilden */
+    }
+
+    .health-text-container {
+        max-width: 100%; /* Ta bort begränsningen på bredd */
+        padding-left: 0; /* Ta bort vänster padding */
+        text-align: left; /* Vänsterjustera texten */
+    }
+
+    .health-title {
+        font-size: 1.8rem; /* Minska rubrikstorleken */
+        text-align: left; /* Centrera rubriken */
+    }
+
+    .health-description {
+        font-size: 1rem; /* Minska textstorleken */
+        margin-top: 20px; /* Lägg till avstånd till rubrik */
+    }
+
+    /* Treatments Section Anpassning */
+    .treatments-button-container {
+        flex-direction: column; /* Stapla knapparna vertikalt */
+        align-items: center; /* Centrera knapparna */
+    }
+
+    .treatments-button {
+        width: 80%; /* Bredda knapparna på mindre skärmar */
+        margin-bottom: 20px; /* Avstånd mellan knapparna */
+    }
+
+    /* Consultation Section Anpassning */
+    .consultation-section {
+        height: 50vh; /* Minska höjden för mobil */
+        padding: 10px; /* Mindre padding */
+    }
+
+    .consultation-overlay {
+        padding: 20px; /* Mindre padding */
+    }
+
+    .consultation-content {
+        padding: 20px;
+        max-width: 90%;
+    }
+
+    .consultation-title {
+        font-size: 2rem; /* Justera rubrikstorlek för mobil */
+    }
+
+    .consultation-description {
+        font-size: 1rem; /* Justera textstorlek */
+    }
+
+    .consultation-button {
+        font-size: 0.9rem; /* Justera knappstorlek */
+        padding: 10px 20px;
+    }
+
+    /* Footer Anpassning */
+    .footer-top {
+        flex-direction: column; /* Ändra till kolumn-layout */
+        align-items: center;
+    }
+
+    .footer-locations {
+        flex-direction: column; /* Placera adresserna vertikalt */
+    }
+
+    .footer-logo, .footer-links, .footer-locations {
+        text-align: center; /* Centrera all text i footern */
+    }
+
+    .location {
+        margin-bottom: 20px; /* Ge varje plats en liten marginal */
+    }
+}

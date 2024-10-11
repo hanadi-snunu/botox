@@ -140,5 +140,18 @@
     .location {
       margin-bottom: 20px;
     }
+
+    .footer-social {
+        margin-bottom: 20px; /* Avstånd mellan ikoner och text */
+      }
+  
+      .footer-icon {
+        font-size: 24px; /* Justera storlek på ikoner */
+        margin: 0 5px; /* Mindre avstånd mellan ikoner */
+      }
+  
+      .footer-bottom p, .footer-bottom a {
+        font-size: 12px; /* Mindre textstorlek för mobil */
+      }
   }
   
