@@ -5,6 +5,8 @@ import { faFacebookF, faInstagram } from '@fortawesome/free-brands-svg-icons';
 import '../css/Footer.css';
 
 const Footer = () => {
+  
+  
   return (
     <footer className="footer-container">
       <div className="footer-top">
@@ -16,6 +18,7 @@ const Footer = () => {
           <Link to="/Bokatid">BOKA TID</Link>
           <Link to="/Kontakt">KONTAKT</Link>
         </div>
+        
         </div>
         <div className="footer-locations">
           <div className="location">

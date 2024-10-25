@@ -272,7 +272,7 @@ body, html {
 
     /* Consultation Section Anpassning */
     .consultation-section {
-        height: 50vh; /* Minska höjden för mobil */
+        height: 60vh; /* Minska höjden för mobil */
         padding: 10px; /* Mindre padding */
     }
 
@@ -296,6 +296,7 @@ body, html {
     .consultation-button {
         font-size: 0.9rem; /* Justera knappstorlek */
         padding: 10px 20px;
+        
     }
 
     /* Footer Anpassning */

@@ -1,0 +1,221 @@
+/* Sektion 1 - Fullbredd bild */
+.omoss-header-section {
+    height: 70vh;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.omoss-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.omoss-content-block {
+    text-align: left;
+    color: white;
+    padding: 30px;
+    max-width: 600px;
+}
+
+.omoss-title {
+    font: 30px "Old Standard TT", Serif;
+    margin-bottom: 40px;
+    color: white;
+    
+}
+
+.omoss-subtitle {
+    font: 16px Mulish, sans-serif;
+    max-width: 600px;
+    line-height: 1.6;
+}
+
+/* Sektion 2 - Historia (Bild till vänster, text till höger på större skärmar) */
+
+
+.omoss-history-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 150px 10%;
+    background-color: white;
+}
+
+.omoss-history-content  {
+    flex: 1;
+    max-width: 50%;
+    padding-left: 20px;
+    margin-top: -10px;
+}
+
+.history-text-container {
+    flex: 1;
+    max-width: 50%;
+    padding-left: 20px;
+    margin-top: -10px;
+}
+
+.history-image {
+    width: 100%;
+    max-width: 400px;
+    height: 600px;
+}
+
+.history-title {
+    margin-bottom: 40px;
+    font: 30px "Old Standard TT", serif;
+    color: #4a4a4a;
+    text-align: center;
+}
+
+.history-text {
+    font: 16px Mulish, sans-serif;
+    line-height: 1.8;
+    max-width: 600px;
+    color: #4a4a4a;
+}
+
+
+/* MEDARBETARE SEKTION*/
+
+.medarbetare-section {
+    padding: 50px 100px;
+    text-align: center;
+    margin-bottom: 150px;
+}
+
+.section-title {
+    font: 30px "Old Standard TT", serif;
+    margin-bottom: 70px;
+    color: #4a4a4a;
+}
+
+.medarbetare-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 50px;
+    justify-items: center;
+}
+
+.medarbetare-card {
+    width: 100%;
+    max-width: 350px;
+    text-align: center;
+}
+
+.medarbetare-card img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.medarbetare-card h3 {
+    font-size: 1.2rem;
+    margin-top: 10px;
+    font-family: 'Mulish', sans-serif;
+    color: #555;
+}
+
+.medarbetare-card p {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.medarbetare-card a {
+    display: block;
+    color: #007bff;
+    text-decoration: none;
+    margin-bottom: 5px;
+}
+
+.medarbetare-card a:hover {
+    text-decoration: underline;
+}
+
+
+/* --- Mobilanpassning --- */
+@media (max-width: 768px) {
+    .omoss-history-section {
+        flex-direction: column; /* Stapla bild och text vertikalt */
+    padding: 30px 10%;
+    }
+    
+    .omoss-history-content  {
+        flex: 1;
+        max-width: 100%;
+        padding-left: 20px;
+        margin-top: 100px;
+    }
+    
+    .history-text-container {
+    max-width: 100%; /* Ta bort begränsningen på bredd */
+    padding-left: 0; /* Ta bort vänster padding */
+    text-align: left;
+    }
+    
+    .history-image {
+        max-width: 300px;
+        height: auto;
+    }
+    
+    .history-title {
+        font-size: 1.8rem; /* Minska rubrikstorleken */
+        text-align: center;
+        margin-top: 50px;
+    }
+    
+    .history-text {
+    font-size: 1rem; /* Minska textstorleken */
+    margin-top: 20px;
+
+    }
+    .history-image-container {
+        margin-right: 0; /* Ta bort höger marginal för att centrera bilden */
+        margin-bottom: 20px; /* Avstånd mellan bild och text */
+        text-align: center; /* Centrera bilden */
+    }
+
+
+    .medarbetare-section {
+        padding: 30px 20px; /* Mindre padding för mobila enheter */
+        margin-bottom: 50px; /* Minska mellanrummet i botten på mobilen */
+    }
+
+    .medarbetare-grid {
+        grid-template-columns: repeat(2, 1fr); /* Två kolumner på mindre skärmar */
+        gap: 20px; /* Mindre gap mellan rutorna */
+    }
+
+    .medarbetare-card {
+        max-width: 100%; /* Ta bort maxbredd så att bilderna fyller ut kolumnerna */
+    }
+
+    .section-title {
+        font-size: 1.8rem; /* Mindre rubrikstorlek för mobil */
+        margin-bottom: 40px; /* Minska avståndet under rubriken */
+    }
+
+
+}
+
+
+
+
+
+
+
+

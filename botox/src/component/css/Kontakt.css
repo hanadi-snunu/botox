@@ -121,7 +121,7 @@
   /* Anpassa för mobil */
   @media (max-width: 768px) {
     .contact-header-section {
-      height: 50vh; /* Minska höjden på mobil */
+      height: 60vh; /* Minska höjden på mobil */
       text-align: center;
     }
   
@@ -143,6 +143,9 @@
   
     .contact-info-wrapper {
       text-align: left; /* Vänsterjustera texten */
+    }
+    .contact-info-wrapper .info-title {
+        font-size: 1.8rem;
     }
   
     .contact-locations {
