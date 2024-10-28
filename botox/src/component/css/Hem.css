@@ -1,0 +1,393 @@
+.home-section {
+    height: 80vh;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.overlay {
+    
+    padding: 40px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.home-title {
+    font: 58px Mulish, sans-serif;
+    margin: 0;
+}
+
+.home-location-text {
+    font: 18px Mulish, sans-serif;
+    margin: 30px 0 50px;
+}
+
+.home-button-group {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+}
+
+.home-action-button {
+    padding: 6px 30px;
+    background-color: #e0e0e0;
+    color: black;
+    text-decoration: none;
+    font: 16px Mulish, sans-serif;
+    transition: background 0.3s;
+}
+
+.home-action-button:hover {
+    background-color: #ccc;
+}
+
+/* Ny om-sektion styling */
+.home-about-section {
+    padding: 70px 20px;
+    text-align: center;
+    border-radius: 5px;
+    margin: 20px 0;
+}
+
+.home-about-title {
+    font: 30px "Old Standard TT", serif;
+    color: #4a4a4a;
+    margin-bottom: 50px;
+}
+
+.home-about-subtitle {
+    font: 16px Mulish, sans-serif;
+    font-weight: bold;
+    color: #4a4a4a;
+    margin-bottom: 30px;
+}
+
+.home-about-description {
+    font: 16px Mulish, sans-serif;
+    color: #4a4a4a;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/*GRID SEKTION FÖR BEHANDLINGAR*/
+/* Gemensamma inställningar */
+.home-treatments-section {
+    padding: 20px;
+}
+
+.home-section-title {
+    font: 30px "Old Standard TT", serif;
+    margin-bottom: 70px;
+    text-align: center;
+    color: #4a4a4a;
+}
+
+.home-treatments-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.home-treatment-card {
+    display: flex;
+    width: 100%;
+    max-width: 1170px;
+    height: 400px;
+    align-items: center;
+    margin-bottom: 50px;
+    overflow: hidden;
+   
+}
+
+.home-treatment-image {
+    width: 560px; 
+    height: 376px;
+    object-fit: cover;
+}
+
+.home-treatment-content {
+    padding: 20px; 
+    width: 50%; 
+}
+
+.home-treatment-title {
+    font-size: 24px;
+    font: 25px "Old Standard TT", serif;
+    margin-bottom: 10px;
+    color: #4a4a4a;
+}
+
+.home-treatment-description {
+    font-size: 16px;
+    font: 16px Mulish, sans-serif;
+    color: #444444;
+    margin-bottom: 10px;
+    line-height: 1.6;
+}
+
+.home-treatment-link {
+    font-size: 16px;
+    color: #444444;
+    text-decoration: underline;
+}
+
+.home-treatment-link:hover {
+    text-decoration: underline;
+}
+
+
+/*TREDJE SEKTIONEN */
+.home-values-section {
+    padding: 50px 20px;
+    text-align: center;
+   
+}
+
+.home-values-grid {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.home-value-card {
+    
+    padding: 20px;
+    width: 100%;
+    max-width: 360px;
+    border-radius: 8px;
+    
+}
+
+.home-value-title {
+    font-size: 20px;
+    font: 25px "Old Standard TT", serif;
+    color: #5a5a5a;
+    margin-bottom: 10px;
+}
+
+.home-value-description {
+    font-size: 16px;
+    font: 16px Mulish, sans-serif;
+    color: #555;
+}
+
+
+/*RECENTION*/
+
+.home-testimonials-section {
+    padding: 100px 20px;
+    text-align: center;
+    background-color: #f9f9f9;
+}
+
+.testimonials-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 60px;
+}
+
+.home-testimonials-title {
+    font: 26px "Old Standard TT", serif;
+    color: #666666;
+    margin: 0;
+}
+
+.testimonial-navigation {
+    display: flex;
+    gap: 10px;
+}
+
+.testimonial-arrow {
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    color:  #666666;
+    transition: color 0.3s ease;
+}
+
+.testimonial-arrow:hover {
+    color: #0c0d0e;
+}
+
+.testimonials-container {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    max-width: 100%;
+}
+
+.testimonial {
+    max-width: 300px;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    font-size: 16px;
+    color: #333;
+    font-family: "Mulish", sans-serif;
+}
+
+.testimonial-quote {
+    font-size: 18px;
+    color: #666666;
+    margin-bottom: 10px;
+    font-style: italic;
+    position: relative;
+}
+
+.testimonial-quote:before,
+.testimonial-quote:after {
+    content: "“";
+    font-size: 30px;
+    color: #b0b0b0;
+    position: absolute;
+}
+
+.testimonial-quote:before {
+    left: -20px;
+    top: -10px;
+}
+
+.testimonial-quote:after {
+    right: -20px;
+    bottom: -10px;
+    transform: rotateY(180deg);
+}
+
+.testimonial-author {
+    font-weight: bold;
+    font-size: 16px;
+    margin-top: 10px;
+    color: #777;
+}
+
+
+
+/* Mobilanpassning för behandlingssektionen */
+@media (max-width: 768px) {
+    .home-treatments-section {
+        padding: 20px 10px;
+    }
+
+    .home-section-title {
+        font-size: 24px;
+        margin-bottom: 40px;
+    }
+
+    .home-treatments-grid {
+        flex-direction: column;
+    }
+
+    .home-treatment-card {
+        flex-direction: column;
+        max-width: 100%;
+        height: auto;
+        text-align: center;
+    }
+
+    .home-treatment-image {
+        width: 100%;
+        height: auto;
+    }
+
+    .home-treatment-content {
+        width: 100%;
+        padding: 10px 20px;
+    }
+
+    .home-treatment-title {
+        font-size: 20px;
+        margin-bottom: 8px;
+    }
+
+    .home-treatment-description {
+        font-size: 14px;
+        margin-bottom: 8px;
+    }
+
+    .home-treatment-link {
+        font-size: 14px;
+    }
+}
+
+/* Mobilanpassning för recensionssektionen */
+@media (max-width: 768px) {
+    .home-testimonials-section {
+        padding: 80px 10px;
+    }
+
+    .testimonials-header {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .home-testimonials-title {
+        font-size: 22px;
+        margin-bottom: 20px;
+    }
+
+    .testimonials-container {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .testimonial {
+        max-width: 100%;
+        padding: 15px;
+        font-size: 14px;
+    }
+
+    .testimonial-quote {
+        font-size: 16px;
+    }
+
+    .testimonial-author {
+        font-size: 14px;
+    }
+
+    .testimonial-arrow {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .home-section {
+        height: 60vh; /* Minska höjden för mobil */
+    }
+
+    .overlay {
+        padding: 20px; /* Minska padding */
+    }
+
+    .home-title {
+        font-size: 36px; /* Minska fontstorleken för rubriken */
+    }
+
+    .home-location-text {
+        font-size: 14px;
+        margin: 20px 0 30px;
+    }
+
+    .home-button-group {
+        flex-direction: column;
+        gap: 20px;
+        align-items: center; /* Centrera knapparna horisontellt */
+    }
+
+    .home-action-button {
+        width: 150px; /* Sätt en fast bredd för knapparna på mobil */
+        padding: 8px 7px; /* Anpassa padding så att knapparna inte blir för breda */
+        font-size: 14px;
+    }
+}

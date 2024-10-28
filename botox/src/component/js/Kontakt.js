@@ -31,14 +31,14 @@ const Kontakt = () => {
         <p className="info-text">
           E-post: <a href="mailto:houseofaesthetics.se@hotmail.com">houseofaesthetics.se@hotmail.com</a><br />
           Instagram: <a href="https://www.instagram.com/_houseofaesthetics?igsh=ZG9mcHdxdTk0bWky" target="_blank" rel="noopener noreferrer">@houseofaesthetics</a><br />
-          Telefon: <a href="tel:073 - 66 67 432">073 - 66 67 432</a>
+          Telefon: <a href="tel:040 - 511101">040 - 511101</a>
         </p>
         <div className="contact-locations">
           <div className="locationK">
             <h4>Öppettider:</h4>
             <p>Mån – Fre: 10:00 – 18:00</p>
-            <p>Lör: Stängt</p>
-            <p>Sön: Stängt</p>
+            <p>Lör: Varierande öppettider</p>
+            <p>Sön: Varierande öppettider</p>
           </div>
          
           {/* Lägg till fler location-sektioner vid behov */}
