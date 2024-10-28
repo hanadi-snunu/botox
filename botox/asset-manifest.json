@@ -1,15 +1,23 @@
 {
   "files": {
-    "main.css": "/static/css/main.9a23c972.css",
-    "main.js": "/static/js/main.4177376f.js",
-    "static/js/453.a7bda9a0.chunk.js": "/static/js/453.a7bda9a0.chunk.js",
-    "index.html": "/index.html",
-    "main.9a23c972.css.map": "/static/css/main.9a23c972.css.map",
-    "main.4177376f.js.map": "/static/js/main.4177376f.js.map",
-    "453.a7bda9a0.chunk.js.map": "/static/js/453.a7bda9a0.chunk.js.map"
+    "main.css": "/botox/static/css/main.eae71d97.css",
+    "main.js": "/botox/static/js/main.7dff75ae.js",
+    "static/js/453.a7bda9a0.chunk.js": "/botox/static/js/453.a7bda9a0.chunk.js",
+    "static/media/omossss.jpg": "/botox/static/media/omossss.5bd532b562e0a04e26b8.jpg",
+    "static/media/pic.jpg": "/botox/static/media/pic.046ac59ae208ebf67c21.jpg",
+    "static/media/piccc.jpg": "/botox/static/media/piccc.d77a60933f7a7a1379b7.jpg",
+    "static/media/medarbetare.jpg": "/botox/static/media/medarbetare.b8ccd5cdb8d3e6ce57b4.jpg",
+    "static/media/kontakt.jpg": "/botox/static/media/kontakt.223eb0252fceb1dd634f.jpg",
+    "static/media/picc.png": "/botox/static/media/picc.89ac0a0b32018cbd4003.png",
+    "static/media/Bokatid.jpg": "/botox/static/media/Bokatid.5fd75891067dbc975d12.jpg",
+    "static/media/omoss.jpg": "/botox/static/media/omoss.519e7a07ceb5c07b321d.jpg",
+    "index.html": "/botox/index.html",
+    "main.eae71d97.css.map": "/botox/static/css/main.eae71d97.css.map",
+    "main.7dff75ae.js.map": "/botox/static/js/main.7dff75ae.js.map",
+    "453.a7bda9a0.chunk.js.map": "/botox/static/js/453.a7bda9a0.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.9a23c972.css",
-    "static/js/main.4177376f.js"
+    "static/css/main.eae71d97.css",
+    "static/js/main.7dff75ae.js"
   ]
 }
