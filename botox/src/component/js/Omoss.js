@@ -45,46 +45,52 @@ const Omoss = () => {
                 {/* Medarbetare 1 */}
                 <div className="medarbetare-card">
                     <img src={Medarbetare} alt="Medarbetare" />
-                    <h3>Felicia Becker</h3>
-                    <p>Leg. Specialist sjuksköterska</p>
+                    <h3>Linda Falk</h3>
+                    <p>Klinikägare & Leg. Sjuksköterska</p>
                 </div>
 
                 {/* Medarbetare 2 */}
                 <div className="medarbetare-card">
                     <img src={Medarbetare} alt="Medarbetare" />
-                    <h3>Linda Falk</h3>
-                    <p>Klinikchef & Leg. Sjuksköterska</p>
+                    <h3>Anna Matanovic</h3>
+                    <p>Verksamhetschef</p>
                 </div>
 
                 {/* Medarbetare 3 */}
                 <div className="medarbetare-card">
                     <img src={Medarbetare} alt="Medarbetare" />
-                    <h3>Sara Parvizinia</h3>
-                    <p>Fransstylist</p>
+                    <h3>Felicia Becker</h3>
+                    <p>Leg. Specialistsjuksköterska</p>
                     
                 </div>
 
                 {/* Medarbetare 4 */}
                 <div className="medarbetare-card">
                     <img src={Medarbetare} alt="Medarbetare" />
-                    <h3>Zaenab Hamza</h3>
-                    <p>Leg. Läkare</p>
+                    <h3>Sofie Huhtala P.</h3>
+                    <p>Cert. Hudterapeut
+                    </p>
                 </div>
                 
                 {/* Medarbetare 5 */}
                 <div className="medarbetare-card">
                     <img src={Medarbetare} alt="Medarbetare" />
-                    <h3>NP Clinique</h3>
-                    <p>Cert. Laserterapeut</p>
+                    <h3>Zaenab Hamza</h3>
+                    <p>Leg. Läkare</p>
                 </div>
                 
                 {/* Medarbetare 6 */}
                 <div className="medarbetare-card">
                     <img src={Medarbetare} alt="Medarbetare" />
-                    <h3>Sofie Huhtala</h3>
-                    <p>Cert. Hudterapeut</p>
+                    <h3>Nazi (Laserterapeuten)</h3>
+                    <p>Cert. Laserterapeut</p>
                 </div>
-               
+                {/* Medarbetare 7 */}
+                <div className="medarbetare-card">
+                    <img src={Medarbetare} alt="Medarbetare" />
+                    <h3>Sara Parvizinia (Lashlab_bysara)</h3>
+                    <p>Fransstylist</p>
+                </div>
             </div>
         </div>
 

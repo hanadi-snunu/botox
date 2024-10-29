@@ -45,14 +45,23 @@ const Behandlingsutbud = () => {
           <Link to="/Injektionsbehandlingar" className="treatments-button">
             Injektionsbehandlingar
           </Link>
+          <Link to="/Trådlyft" className="treatments-button">
+            Trådlyft
+          </Link>
           <Link to="/Laserbehandlingar" className="treatments-button">
             Laserbehandlingar
           </Link>
           <Link to="/Ansiktsbehandlingar" className="treatments-button">
             Ansiktsbehandlingar
           </Link>
-          <Link to="/Utbildningar" className="treatments-button">
-            Utbildningar
+          <Link to="/HydraFacial" className="treatments-button">
+            Hydra Facial
+          </Link>
+          <Link to="/Massagee" className="treatments-button">
+            Massage
+          </Link>
+          <Link to="/Vaxning" className="treatments-button">
+            Vaxning
           </Link>
         </div>
       </div>

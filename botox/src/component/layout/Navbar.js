@@ -61,8 +61,12 @@ const Navbar = () => {
             {dropdownOpen === "behandlingsutbud" && (
               <ul className="dropdown">
                 <li><Link to="/Injektionsbehandlingar">Injektionsbehandlingar</Link></li>
-                <li><Link to="/Ansiktsbehandlingar">Ansiktsbehandlingar</Link></li>
+                <li><Link to="/Trådlyft">Trådlyft</Link></li>
                 <li><Link to="/Laserbehandlingar">Laserbehandlingar</Link></li>
+                <li><Link to="/Ansiktsbehandlingar">Ansiktsbehandlingar</Link></li>
+                <li><Link to="/HydraFacial">Hydra Facial</Link></li>
+                <li><Link to="/Massagee">Massage</Link></li>
+                <li><Link to="/Vaxning">Vaxning</Link></li>
               </ul>
             )}
           </li>
@@ -109,8 +113,12 @@ const Navbar = () => {
                 ) : subMenu === "behandlingsutbud" ? (
                     <ul className="mobile-submenu">
                         <li><Link to="/Injektionsbehandlingar" onClick={toggleMenu}>Injektionsbehandlingar</Link></li>
-                        <li><Link to="/Ansiktsbehandlingar" onClick={toggleMenu}>Ansiktsbehandlingar</Link></li>
+                        <li><Link to="/Trådlyft" onClick={toggleMenu}>Trådlyft</Link></li>
                         <li><Link to="/Laserbehandlingar" onClick={toggleMenu}>Laserbehandlingar</Link></li>
+                        <li><Link to="/Ansiktsbehandlingar" onClick={toggleMenu}>Ansiktsbehandlingar</Link></li>
+                        <li><Link to="/HydraFacial" onClick={toggleMenu}>Hydra Facial</Link></li>
+                        <li><Link to="/Massagee" onClick={toggleMenu}>Massage</Link></li>
+                        <li><Link to="/Vaxning" onClick={toggleMenu}>Vaxning</Link></li>
                     </ul>
                 ) : subMenu === "priser" ? (
                     <ul className="mobile-submenu">

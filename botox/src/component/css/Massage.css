@@ -1,0 +1,186 @@
+.massage-header {
+    height: 80vh;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    color: white;
+  }
+  
+  .massage-overlay {
+    
+    padding: 40px;
+    text-align: center;
+    border-radius: 5px;
+  }
+  
+  .massage-title {
+    font: 35px "Old Standard TT", Serif;
+    margin: 0;
+  }
+  
+  .massage-description {
+    font: 16px Mulish, sans-serif;
+    margin: 20px 0 30px;
+    line-height: 1.6;
+    max-width: 600px;
+    text-align: left;
+    
+  }
+  
+  .separator-line {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0;
+    margin-bottom: 10px;
+}
+
+.separator-line::before,
+.separator-line::after {
+    content: "";
+    flex: 1;
+    border-bottom: 1px solid #ccc;
+}
+
+.separator-dot {
+    padding: 0 10px;
+    font-size: 18px;
+    color: #aaa; /* Ändra färgen om du vill */
+}
+
+
+  /*ANDRA SEKTIONEN*/
+  .massage-info-section {
+    padding: 40px 20px;
+    text-align: center;
+    color: #4a4a4a;
+    margin-bottom: 50px;
+  }
+  
+  .info-title {
+    font: 35px "Old Standard TT", Serif; 
+    margin-bottom: 40px;
+    color: #666666;
+  }
+  
+  .info-text {
+    font: 16px Mulish, sans-serif;
+    line-height: 1.9;
+    max-width: 650px;
+    margin: 0 auto;
+    color: #666666;
+    text-align: left;
+  }
+
+  /* Grid Sektion för Massage Behandlingar */
+.massage-treatments-section {
+    padding: 20px;
+    margin-bottom: 80px;
+}
+
+
+
+.massage-treatments-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.massage-treatment-card {
+    display: flex;
+    width: 100%;
+    max-width: 1170px;
+    height: 400px;
+    align-items: center;
+    margin-bottom: 50px;
+    overflow: hidden;
+}
+
+.massage-treatment-image {
+    width: 560px; 
+    height: 376px;
+    object-fit: cover;
+}
+
+.massage-treatment-content {
+    padding: 20px; 
+    width: 50%; 
+}
+
+.massage-treatment-title {
+    font-size: 24px;
+    font: 25px "Old Standard TT", serif;
+    margin-bottom: 10px;
+    color: #4a4a4a;
+}
+
+.massage-treatment-description {
+    font-size: 16px;
+    font: 16px Mulish, sans-serif;
+    color: #444444;
+    margin-bottom: 10px;
+    line-height: 1.6;
+}
+
+.massage-treatment-link {
+    font-size: 16px;
+    color: #444444;
+    text-decoration: underline;
+}
+
+.massage-treatment-link:hover {
+    text-decoration: underline;
+}
+
+
+
+/* Mobilanpassning för behandlingssektionen */
+@media (max-width: 768px) {
+    .massage-treatments-section {
+        padding: 20px 10px;
+    }
+
+    .massage-section-title {
+        font-size: 24px;
+        margin-bottom: 40px;
+    }
+
+    .massage-treatments-grid {
+        flex-direction: column;
+    }
+
+    .massage-treatment-card {
+        flex-direction: column;
+        max-width: 100%;
+        height: auto;
+        text-align: center;
+    }
+
+    .massage-treatment-image {
+        width: 100%;
+        height: auto;
+    }
+
+    .massage-treatment-content {
+        width: 100%;
+        padding: 10px 20px;
+    }
+
+    .massage-treatment-title {
+        font-size: 20px;
+        margin-bottom: 8px;
+    }
+
+    .massage-treatment-description {
+        font-size: 14px;
+        margin-bottom: 8px;
+    }
+
+    .massage-treatment-link {
+        font-size: 14px;
+    }
+}
