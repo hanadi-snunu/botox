@@ -136,6 +136,46 @@
     text-decoration: underline;
 }
 
+/*RELAX BITEN*/
+.relax-treatment-card {
+    display: flex;
+    justify-content: center; /* Centrerar hela kortet */
+    width: 100%;
+    max-width: 1170px;
+    height: 400px;
+    align-items: center;
+    margin: 150px auto 50px auto; /* Centrerar kortet på sidan */
+    overflow: hidden;
+    margin-bottom: 150px;
+}
+
+.relax-treatment-image {
+    width: 560px; 
+    height: 376px;
+    object-fit: cover;
+    margin-left: 40px; /* Flyttar bilden mot mitten */
+}
+
+.relax-treatment-content {
+    padding: 20px; 
+    width: 50%;
+}
+
+.relax-treatment-title {
+    font-size: 24px;
+    font: 25px "Old Standard TT", serif;
+    margin-bottom: 10px;
+    color: #4a4a4a;
+}
+
+.relax-treatment-description {
+    font-size: 16px;
+    font: 16px Mulish, sans-serif;
+    color: #444444;
+    margin-bottom: 10px;
+    line-height: 1.6;
+}
+
 
 
 /* Mobilanpassning för behandlingssektionen */
@@ -183,4 +223,40 @@
     .massage-treatment-link {
         font-size: 14px;
     }
+    .relax-treatment-card {
+        flex-direction: column;
+        max-width: 100%;
+        height: auto;
+        text-align: center;
+    
+    }
+
+    .relax-treatment-image {
+        width: 80%;
+    height: auto;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block; 
+    }
+
+    .relax-treatment-content {
+        width: 100%;
+        padding: 10px 20px;
+    }
+
+    .relax-treatment-title {
+        font-size: 20px;
+        margin-bottom: 8px;
+    }
+
+    .relax-treatment-description {
+        font-size: 14px;
+        margin-bottom: 25px;
+        text-align: justify; /* Justerar texten så den är lättare att läsa */
+    word-wrap: break-word; /* Gör att långa ord bryts och visas korrekt */
+    overflow-wrap: break-word; /* Hanterar ord som är för långa för behållaren */
+    padding: 0 40px;
+    }
+
 }
