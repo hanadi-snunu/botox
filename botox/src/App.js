@@ -20,10 +20,24 @@ import "./App.css";
 import Trådlyft from "./component/js/behandlingsutbud/Trådlyft";
 import HydraFacial from "./component/js/behandlingsutbud/HydraFacial";
 import Massage from "./component/js/behandlingsutbud/massage/Massagee";
-import Vaxning from "./component/js/behandlingsutbud/Vaxning";
+import Vaxning from "./component/js/behandlingsutbud/vaxningg/Vaxning";
 import RelaxTime from "./component/js/behandlingsutbud/massage/RelaxingTime";
 import KlippkortX5 from "./component/js/behandlingsutbud/massage/KlippkortX5";
 import AnsiktsMassage from "./component/js/behandlingsutbud/massage/Ansiktsmassage";
+import Armar from "./component/js/behandlingsutbud/vaxningg/Armar";
+import ArmarMan from "./component/js/behandlingsutbud/vaxningg/ArmarMen";
+import Armhala from "./component/js/behandlingsutbud/vaxningg/Armhala";
+import Bikini from "./component/js/behandlingsutbud/vaxningg/Bikini";
+import Brasiliansk from "./component/js/behandlingsutbud/vaxningg/Brasiliansk";
+import BrostMage from "./component/js/behandlingsutbud/vaxningg/Brost+Mage";
+import Halvaben from "./component/js/behandlingsutbud/vaxningg/Halvaben";
+import HalvabenBikini from "./component/js/behandlingsutbud/vaxningg/Halvaben+bikini";
+import Helaben from "./component/js/behandlingsutbud/vaxningg/Helaben";
+import HelabenBikini from "./component/js/behandlingsutbud/vaxningg/Helaben+bikini";
+import Helkropp from "./component/js/behandlingsutbud/vaxningg/Helkropp";
+import Overlapp from "./component/js/behandlingsutbud/vaxningg/Overlapp";
+import OverlappHaka from "./component/js/behandlingsutbud/vaxningg/Overlapp+haka";
+import Rygg from "./component/js/behandlingsutbud/vaxningg/Rygg.";
 
 function App() {
   return (
@@ -42,6 +56,22 @@ function App() {
           <Route path="/KlippkortX5" element={<KlippkortX5 />} /> 
           <Route path="/Ansiktsmassage" element={<AnsiktsMassage />} /> 
           <Route path="/Vaxning" element={<Vaxning />} /> 
+          <Route path="/Armar" element={<Armar />} /> 
+          <Route path="/ArmarMen" element={<ArmarMan />} /> 
+          <Route path="/Armhala" element={<Armhala />} /> 
+          <Route path="/Bikini" element={<Bikini />} /> 
+          <Route path="/Brasiliansk" element={<Brasiliansk />} /> 
+          <Route path="/Brost+Mage" element={<BrostMage />} /> 
+          <Route path="/Halvaben" element={<Halvaben />} /> 
+          <Route path="/Halvaben+bikini" element={<HalvabenBikini />} /> 
+          <Route path="/Helaben" element={<Helaben />} /> 
+          <Route path="/Helaben+bikini" element={<HelabenBikini />} /> 
+          <Route path="/Helkropp" element={<Helkropp />} /> 
+          <Route path="/Overlapp" element={<Overlapp />} /> 
+          <Route path="/Pverlapp+haka" element={<OverlappHaka />} /> 
+          <Route path="/Rygg" element={<Rygg />} /> 
+
+
           <Route path="/Hittabehandling" element={<Hittabehandling />} />
           <Route path="/Kontakt" element={<Kontakt />} />
           <Route path="/Omoss" element={<Omoss />} />
