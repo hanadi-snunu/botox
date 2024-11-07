@@ -1,3 +1,5 @@
+
+
 .massage-header {
     height: 80vh;
     background-size: cover;
@@ -34,8 +36,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 20px 0;
-    margin-bottom: 10px;
+    margin: 50px 0;
+    margin-bottom: 50px;
 }
 
 .separator-line::before,
@@ -49,6 +51,7 @@
     padding: 0 10px;
     font-size: 18px;
     color: #aaa; /* Ändra färgen om du vill */
+    
 }
 
 
@@ -75,66 +78,185 @@
     text-align: left;
   }
 
+  /*CONTAINER FÖR PRIS DELEN*/
+  .massage-prices-container {
+    margin: 40px;
+  }
+  
+  .prices-title {
+    font: 30px "Old Standard TT", serif;
+    color: #666666;
+    margin-bottom: 20px;
+  }
+  
+  .price-section {
+    
+    margin-bottom: 10px;
+  }
+  
+  .price-header {
+    cursor: pointer;
+    padding: 15px;
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .price-toggle {
+    font: 16px Mulish, sans-serif;
+    margin: 0;
+    color: #666666;
+  }
+  
+  .price-toggle.open {
+    font: 16px Mulish, sans-serif;
+    color: #666666;
+  }
+  
+  .price-content {
+    background-color: #ffffff;
+    padding: 15px;
+    border-top: 1px solid #ddd;
+  }
+  .price-content td{
+    font: 16px Mulish, sans-serif;
+    color: #666666;
+  }
+  
+  .price-table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+ 
+  .price-table td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .price-table td:last-child {
+    text-align: right;
+  }
+  
+  
+
   /* Grid Sektion för Massage Behandlingar */
-.massage-treatments-section {
-    padding: 20px;
-    margin-bottom: 80px;
+  .massage-treatments-section {
+    padding: 40px;
+    background-color: #f0f0f0; /* Lägg till en bakgrundsfärg om du vill */
+    margin-bottom: 50px;
 }
 
-
-
 .massage-treatments-grid {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 20px;
-    justify-content: center;
+    background-color: #f0f0f0; /* Lägg till en bakgrundsfärg om du vill */
+    padding: 40px;
 }
 
 .massage-treatment-card {
-    display: flex;
-    width: 100%;
-    max-width: 1170px;
-    height: 400px;
-    align-items: center;
-    margin-bottom: 50px;
+    background-color: #f0f0f0;
     overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 15px;
 }
-
+.massage-section-title {
+    font: 30px "Old Standard TT", serif;
+    color: #666666;
+    margin-bottom: 20px;
+    text-align: left;
+}
 .massage-treatment-image {
-    width: 560px; 
-    height: 376px;
+    width: 100%;
+    height: 400px;
     object-fit: cover;
+    border-bottom: 1px solid #ddd;
 }
 
 .massage-treatment-content {
-    padding: 20px; 
-    width: 50%; 
+    padding: 20px;
 }
 
 .massage-treatment-title {
-    font-size: 24px;
-    font: 25px "Old Standard TT", serif;
-    margin-bottom: 10px;
-    color: #4a4a4a;
+    font: 20px Mulish, sans-serif;
+    color: #666666;
+    margin: 15px 0 10px;
+    text-align: left;
+    
 }
 
 .massage-treatment-description {
-    font-size: 16px;
     font: 16px Mulish, sans-serif;
-    color: #444444;
-    margin-bottom: 10px;
-    line-height: 1.6;
+    color: #666666;
+    margin-bottom: 15px;
+    line-height: 1.5;
+    text-align: left;
 }
 
 .massage-treatment-link {
-    font-size: 16px;
-    color: #444444;
-    text-decoration: underline;
+    font: 16px Mulish, sans-serif;
+    color: #666666;
+    text-decoration: none;
+    text-align: left;
+    display: block; /* Gör länken blocknivå så att text-align: left fungerar */
+    margin-top: 10px;
 }
 
 .massage-treatment-link:hover {
     text-decoration: underline;
 }
+
+/*FRÅGOR DELEN*/
+
+.massage-faq-section {
+    max-width: 800px; /* Limit the width */
+    margin: 50px auto; /* Center the section */
+    padding: 30px;
+   
+}
+
+.massage-faq-title {
+    font: 30px'Old Standard TT', serif;
+    color: #666666;
+    margin-bottom: 20px;
+    text-align: center; /* Center align the title */
+}
+
+.massage-faq-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* Reduce space between items */
+}
+
+.massage-faq-item {
+    border-bottom: 1px solid #ddd;
+    padding: 10px 0; /* Reduce padding */
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.massage-faq-question {
+    display: flex;
+    justify-content: space-between;
+    font: 16px 'Mulish', sans-serif;
+    color: #444;
+}
+
+.massage-faq-answer {
+    margin-top: 15px; /* Smaller top margin */
+    font-size: 14px; /* Slightly smaller font */
+    line-height: 1.4; /* More compact line height */
+    font-family: 'Mulish', sans-serif;
+    color: #666;
+    text-align: left; /* Ensure text is left-aligned */
+}
+
+
 
 /*RELAX BITEN*/
 .relax-treatment-card {
