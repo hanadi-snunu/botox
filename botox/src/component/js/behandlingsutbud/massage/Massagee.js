@@ -91,11 +91,23 @@ const settings = {
 
     {/* Andra sektionen med rubrik och text */}
     <section className="massage-info-section">
-    <h2 className="info-title">Massage</h2>
-    <p className="info-text">
-      Massage är en metod för att lindra stress, förbättra muskelåterhämtning och främja avslappning. Genom olika tekniker kan massage hjälpa till att lindra spänningar, förbättra cirkulationen och främja ett starkare välbefinnande. Vårt team av erfarna massageterapeuter ser till att du får en anpassad upplevelse baserad på dina behov.
-    </p>
-  </section>
+    <div className="massage-info-container">
+        <img src={massage1} alt="Massage" className="massage-info-image" />
+        <div className="massage-info-text-container">
+            <h2 className="info-title">Massage</h2>
+            <p className="info-text">
+                Massage är en metod för att lindra stress, förbättra muskelåterhämtning och främja avslappning. Genom olika tekniker kan massage hjälpa till att lindra spänningar, förbättra cirkulationen och främja ett starkare välbefinnande. Vårt team av erfarna massageterapeuter ser till att du får en anpassad upplevelse baserad på dina behov.
+            </p>
+            <p className="info-text">
+                Massage är en metod för att lindra stress, förbättra muskelåterhämtning och främja avslappning. Genom olika tekniker kan massage hjälpa till att lindra spänningar, förbättra cirkulationen och främja ett starkare välbefinnande. Vårt team av erfarna massageterapeuter ser till att du får en anpassad upplevelse baserad på dina behov.
+            </p>
+            <p className="info-text">
+                Massage är en metod för att lindra stress, förbättra muskelåterhämtning och främja avslappning. Genom olika tekniker kan massage hjälpa till att lindra spänningar, förbättra cirkulationen och främja ett starkare välbefinnande. Vårt team av erfarna massageterapeuter ser till att du får en anpassad upplevelse baserad på dina behov.
+            </p>
+        </div>
+    </div>
+</section>
+
 
   <div className="massage-prices-container">
       <h2 className="prices-title">Priser</h2>
