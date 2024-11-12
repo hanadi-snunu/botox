@@ -342,16 +342,28 @@
   }
   
 
-  .relax-treatment-button {
-    display: block;
-   
-   margin: 20px auto 0px;
+  .relax-treatment-button-wrapper {
+    display: flex;
+    justify-content: center; /* Centrerar innehållet horisontellt */
+    margin-top: 20px; /* Justera om du vill ha mer avstånd från toppen */
+}
+
+.relax-treatment-button {
+    display: inline-block;
     padding: 6px 23px;
     background-color: #e1e6e1;
     border: none;
     cursor: pointer;
     font: 16px Mulish, sans-serif;
-  }
+    text-align: center;
+    text-decoration: none; /* Ta bort understrykningen */
+    color: inherit; /* Behåll knappens textfärg */
+}
+
+
+.relax-treatment-button:hover {
+    background-color: #d3dbd3; /* Ändra till önskad hover-effekt */
+}
 
   .relax-session-info {
     display: flex;
@@ -476,8 +488,8 @@
     }
 
     .relax-treatment-title {
-        font-size: 20px;
-        margin-bottom: 10px;
+        font-size: 25px;
+        margin-bottom: 40px;
     }
 
     .relax-treatment-description {

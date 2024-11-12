@@ -38,7 +38,12 @@ const RelaxTime = () => {
         <li><strong>Fördelar:</strong> Minskad stress, förbättrad blodcirkulation, avslappning</li>
         <li><strong>Rekommenderat för:</strong> Alla som behöver minska spänningar och stress</li>
       </ul>
-      <button className="relax-treatment-button">Boka en massage</button>
+      <div className="relax-treatment-button-wrapper">
+    <Link to="/Bokatid" className="relax-treatment-button">
+        Boka klippkort
+    </Link>
+</div>
+
     </div>
   </div>
 </div>

@@ -41,9 +41,11 @@ import Rygg from "./component/js/behandlingsutbud/vaxningg/Rygg.";
 
 function App() {
   return (
-    <div className="App"> {/* App-klass för layout */}
+    
+     <div className="App"> {/* App-klass för layout */}
+    <ScrollToTop />
       <Navbar />
-      <ScrollToTop />
+    
       <div className="main-content"> {/* Main-content-klass för att placera innehåll rätt */}
         <Routes>
           <Route path="/Hem" element={<Hem />} />
@@ -84,6 +86,7 @@ function App() {
           <Route path="/Integritetspolicy" element={<Integritetspolicy />} />
           <Route path="/" element={<Hem />} /> {/* Standardroute till Hem */}
         </Routes>
+        
       </div>
       <Footer />
     </div>

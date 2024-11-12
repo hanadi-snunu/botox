@@ -3,6 +3,7 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import "../css/Navbar.css";
+import logo from '../img/logga.png';
 
 const Navbar = () => {
     const [menuOpen, setMenuOpen] = useState(false); // Hanterar mobilmenyn
@@ -30,9 +31,9 @@ const Navbar = () => {
     <header className="header-container">
       <div className="navbar-top">
         <div className="logo">
-          <Link to="/">
-            <h1>Houseofaesthetics</h1>
-          </Link>
+        <Link to="/">
+          <img src={logo} alt="House of Aesthetics Logo" className="logo-image" />
+        </Link>
         </div>
         <div className="contact-info">
           <span>tel: 073 - 66 67 432</span>
