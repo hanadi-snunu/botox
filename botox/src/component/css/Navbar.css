@@ -3,7 +3,7 @@
 
 body, html {
   font-family: 'Mulish', sans-serif;
-  padding-top: 80px;
+  padding-top: 70px;
 }
 
 /* Navbar styling för större skärmar */
@@ -14,7 +14,7 @@ body, html {
   position: fixed; /* This makes the navbar sticky */
   top: 0; /* Positions the navbar at the top */
   left: 0; /* Aligns it to the left side */
-  z-index: 1000;
+  z-index: 999;
 }
 
 .navbar-top {

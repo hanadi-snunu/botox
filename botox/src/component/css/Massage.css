@@ -280,13 +280,14 @@
     margin: 30px auto;
     gap: 20px;
     min-height: 600px;
+    
   }
 
  
   .relax-treatment-content {
-    flex: 2;
-    padding: 10px; /* Minskar padding för kompaktare innehåll */
-    margin-right: 0; /* Tar bort extra margin */
+    max-width: 100%;
+    word-break: break-word; /* Gör så att långa ord bryts och inte går utanför ramar */
+    line-height: 1.6; /* För bättre läsbarhet */
 }
 
 .relax-treatment-details {

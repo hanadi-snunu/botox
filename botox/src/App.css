@@ -1,9 +1,16 @@
 /* Hela sidan tar upp hela fönsterhöjden */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 html, body, #root {
-  height: 100%;
-  margin: 0;
+  /*height: 100%;*/
+  
   padding: 0;
- 
+  overflow: visible;
+  margin: 0;
 }
 
 .App {
@@ -14,7 +21,8 @@ html, body, #root {
 
 /* Innehåll tar upp hela utrymmet, och footern ligger längst ner */
 .main-content {
-  flex: 1; /* Tar upp allt tillgängligt utrymme */
+  /*flex: 1;  Tar upp allt tillgängligt utrymme */
+  padding-top: 70px;
 }
 
 /* Footern ska vara längst ner */

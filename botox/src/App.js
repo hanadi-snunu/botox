@@ -12,7 +12,7 @@ import Priser from "./component/js/Priser";
 import Utbildning from "./component/js/Utbildningar";
 import BokaTid from "./component/js/Bokatid";
 import Integritetspolicy from "./component/js/Integritetspolicy";
-import Ansikte from "./component/js/behandlingsutbud/Ansiktsbehandlingar";
+import Ansikte from "./component/js/behandlingsutbud/ansiktsbehandlingar/Ansiktsbehandlingar";
 import Laser from "./component/js/behandlingsutbud/Laserbehandlingar";
 import Injektion from "./component/js/behandlingsutbud/Injektionsbehandlingar";
 import ScrollToTop from "./component/js/ScrollToTop";
@@ -38,6 +38,17 @@ import Helkropp from "./component/js/behandlingsutbud/vaxningg/Helkropp";
 import Overlapp from "./component/js/behandlingsutbud/vaxningg/Overlapp";
 import OverlappHaka from "./component/js/behandlingsutbud/vaxningg/Overlapp+haka";
 import Rygg from "./component/js/behandlingsutbud/vaxningg/Rygg.";
+import Dermaplaning from "./component/js/behandlingsutbud/ansiktsbehandlingar/Dermaplaning";
+import DjuprensandeAnsiktsbehandling from "./component/js/behandlingsutbud/ansiktsbehandlingar/Djuprensande-ansiktsbehandling";
+import HydraFa from "./component/js/behandlingsutbud/ansiktsbehandlingar/Hydra-facial";
+import InstantClean from "./component/js/behandlingsutbud/ansiktsbehandlingar/Instant-clean";
+import InstantGlow from "./component/js/behandlingsutbud/ansiktsbehandlingar/Instant-glow";
+import KemiskPeel from "./component/js/behandlingsutbud/ansiktsbehandlingar/Kemisk-peel";
+import KlassiskAnsiktsbehandling from "./component/js/behandlingsutbud/ansiktsbehandlingar/Klassisk-ansiktsbehandling";
+import LEDLjusterapi from "./component/js/behandlingsutbud/ansiktsbehandlingar/LED-Ljusterapi";
+import LyxAnsiktsbehandling from "./component/js/behandlingsutbud/ansiktsbehandlingar/Lyx-ansiktsbehandling";
+import Microneedling from "./component/js/behandlingsutbud/ansiktsbehandlingar/Microneedling";
+import PRXT33 from "./component/js/behandlingsutbud/ansiktsbehandlingar/PRXT-33";
 
 function App() {
   return (
@@ -72,6 +83,18 @@ function App() {
           <Route path="/Overlapp" element={<Overlapp />} /> 
           <Route path="/Pverlapp+haka" element={<OverlappHaka />} /> 
           <Route path="/Rygg" element={<Rygg />} /> 
+          <Route path="/Ansiktsbehandlingar" element={<Ansikte />} />
+          <Route path="/Dermaplaning" element={<Dermaplaning />} />
+          <Route path="/Djuprensande-ansiktsbehandling" element={<DjuprensandeAnsiktsbehandling />} />
+          <Route path="/Hydra-facial" element={<HydraFa />} />
+          <Route path="/Instant-clean" element={<InstantClean />} />
+          <Route path="/Instant-glow" element={<InstantGlow />} />
+          <Route path="/Kemisk-peel" element={<KemiskPeel />} />
+          <Route path="/Klassisk-ansiktsbehandling" element={<KlassiskAnsiktsbehandling />} />
+          <Route path="/LED-Ljusterapi" element={<LEDLjusterapi />} />
+          <Route path="/Lyx-ansiktsbehandling" element={<LyxAnsiktsbehandling />} />
+          <Route path="/Microneedling" element={<Microneedling />} />
+          <Route path="/PRXT-33" element={<PRXT33 />} />
 
 
           <Route path="/Hittabehandling" element={<Hittabehandling />} />
@@ -79,7 +102,7 @@ function App() {
           <Route path="/Omoss" element={<Omoss />} />
           <Route path="/Priser" element={<Priser />} />
           <Route path="/Utbildningar" element={<Utbildning />} />
-          <Route path="/Ansiktsbehandlingar" element={<Ansikte />} />
+          
           <Route path="/Laserbehandlingar" element={<Laser />} />
           <Route path="/Injektionsbehandlingar" element={<Injektion />} />
           <Route path="/Bokatid" element={<BokaTid />} />
