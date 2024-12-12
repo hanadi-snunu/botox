@@ -124,6 +124,19 @@ const Hem = () => {
                         </div>
                     </div>
 
+
+                    {/* Utbildningar */}
+                    <div className="home-treatment-card">
+                        <img src={CommonImage} alt="Behandling" className="home-treatment-image" />
+                        <div className="home-treatment-content">
+                            <h3 className="home-treatment-title">Hydra Facial</h3>
+                            <p className="home-treatment-description">
+                            En avancerad behandling som rengör, återfuktar och föryngrar huden. Perfekt för att ge huden en frisk och strålande lyster.
+                            </p>
+                            <Link to="/HydraFacial" className="home-treatment-link">Läs mer om Hydra Facial här</Link>
+                        </div>
+                    </div>
+
                     {/* Laserbehandlingar */}
                     <div className="home-treatment-card">
                         <img src={CommonImage} alt="Behandling" className="home-treatment-image" />
@@ -136,17 +149,37 @@ const Hem = () => {
                         </div>
                     </div>
 
-                    {/* Utbildningar */}
                     <div className="home-treatment-card">
                         <img src={CommonImage} alt="Behandling" className="home-treatment-image" />
                         <div className="home-treatment-content">
-                            <h3 className="home-treatment-title">Utbildningar</h3>
+                            <h3 className="home-treatment-title">Trådlyft</h3>
                             <p className="home-treatment-description">
-                                Vi erbjuder utbildningar för dig som vill fördjupa dig inom estetik och avancerad hudvård.
-                            </p>
-                            <Link to="/Utbildningar" className="home-treatment-link">Läs mer om våra utbildningar här</Link>
+                            Få ett naturligt lyft och föryngring utan kirurgi. Trådlyft stimulerar hudens kollagenproduktion för långvariga resultat.                            </p>
+                            <Link to="/Trådlyft" className="home-treatment-link">Läs mer om våra trådlyftsbehandlingar här</Link>
                         </div>
                     </div>
+
+                    <div className="home-treatment-card">
+                        <img src={CommonImage} alt="Behandling" className="home-treatment-image" />
+                        <div className="home-treatment-content">
+                            <h3 className="home-treatment-title">Massage</h3>
+                            <p className="home-treatment-description">
+                            Slappna av och lindra spänningar med våra professionella massagebehandlingar. Främjar cirkulation och allmänt välbefinnande.                            </p>
+                            <Link to="/Massagee" className="home-treatment-link">Läs mer om massage här</Link>
+                        </div>
+                    </div>
+
+                    <div className="home-treatment-card">
+                        <img src={CommonImage} alt="Behandling" className="home-treatment-image" />
+                        <div className="home-treatment-content">
+                            <h3 className="home-treatment-title">Vaxning</h3>
+                            <p className="home-treatment-description">
+                            Upplev len och hårfri hud som varar länge. Våra skonsamma vaxningar passar för hela kroppen.                            </p>
+                            <Link to="/Vaxning" className="home-treatment-link">Läs mer om vaxning här</Link>
+                        </div>
+                    </div>
+
+                    
                 </div>
             </div>
 

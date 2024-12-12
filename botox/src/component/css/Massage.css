@@ -85,11 +85,113 @@
   .info-text {
     font: 16px Mulish, sans-serif;
     line-height: 1.9;
-    margin: 0 auto;
     color: #666666;
+    margin: 0 auto;
     text-align: left;
     margin: 0 0 15px;
   }
+
+  /*HYDRA FACIAL ANDRA SEKTION DELEN*/
+  /* HydraFacial: Allmänna inställningar */
+.hydrafacial-info-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: 20px auto;
+    max-width: 1200px;
+  }
+  
+  .hydrafacial-info-image {
+    flex: 1;
+    max-width: 500px;
+    margin: 0 auto 15px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .hydrafacial-info-text-container {
+    flex: 2;
+    padding: 20px;
+    color: #333;
+  }
+  
+  /* HydraFacial: Rubriker */
+  .hydrafacial-info-title {
+    font: 22px "Old Standard TT", Serif; 
+    margin-bottom: 40px;
+    color: #666666;
+    margin-top: 70px;
+   
+  }
+  
+  /* HydraFacial: Text */
+  .hydrafacial-info-text {
+    font: 16px Mulish, sans-serif;
+    line-height: 1.8;
+    color: #666666;
+    margin: 0 100px 70px; /* Minskar marginalerna mellan stycken */
+    text-align: justify;
+  }
+  
+  /* HydraFacial: Listor */
+  .hydrafacial-info-list {
+    list-style-type: disc;
+    margin: 10px 0 15px 120px;
+    line-height: 1.6;
+  }
+  
+  .hydrafacial-info-list li {
+    margin-bottom: 8px;
+    color: #444;
+    text-align: left;
+  }
+  
+  /* HydraFacial: Markerad text */
+  .hydrafacial-info-list li strong {
+    color: #666666; /* Matcha rubrikfärg */
+    font-weight: bold;
+  }
+  
+  /* Anpassning för mindre skärmar */
+  @media (max-width: 768px) {
+    .hydrafacial-info-container {
+      flex-direction: column;
+      margin: 10px auto;
+    }
+  
+    .hydrafacial-info-image {
+      max-width: 100%;
+      margin: 0 auto 10px;
+    }
+  
+    .hydrafacial-info-text-container {
+      padding: 10px;
+    }
+  
+    .hydrafacial-info-title {
+      font-size: 24px;
+      margin-top: 100px;
+      margin-bottom: 40px;
+    }
+  
+    .hydrafacial-info-text {
+      font-size: 14px;
+      margin: 0 10px 30px;
+      line-height: 1.6;
+      text-align: justify;
+    }
+  
+    .hydrafacial-info-list {
+      margin: 10px 20px;
+      line-height: 1.4;
+    }
+  
+    .hydrafacial-info-list li {
+      margin-bottom: 8px;
+      font-size: 14px;
+    }
+  }
+  
 
   /*CONTAINER FÖR PRIS DELEN*/
   .massage-prices-container {

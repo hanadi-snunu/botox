@@ -8,21 +8,25 @@ const Microneedling = () => {
       backgroundImage={microneedlingImage}
       title="Microneedling"
       description="En behandling som stimulerar hudens kollagenproduktion och förbättrar hudens struktur."
-      extraDescription={`Microneedling skapar mikrokanaler med små nålar i det översta hudlagret. 
-Behandlingen stimulerar blodcirkulationen och bildandet av kollagen, vilket har en 
-föryngrande effekt på hela hudens kvalitet och utseende. Behandlingen kan också 
-användas för att slussa ner olika verksamma produkter, för en större effekt som 
-jämnar ut och stärker hela hudytan.<br /><br />
+      extraDescription={`Microneedling är en populär behandling som 
+        stimulerar kollagenproduktionen och förbättrar hudens struktur 
+        och kvalitet. Genom att skapa mikrokanaler i huden behandlas problem 
+        som akneärr, fina linjer, förstorade porer och pigmentfläckar. 
+        Behandlingen resulterar i en föryngrad hud med ökad elasticitet 
+        och lyster. Näringsämnen kan också slussas in för att maximera effekten.<br /><br />
 
-      Behandlingen kan användas för att behandla en mängd olika hudproblem, bland 
-annat dessa nedan:
+        Att tänka på:<br /><br />
+        Behandlingen kan kännas något obehaglig trots bedövning, 
+        och huden kan bli röd och känslig efteråt. SPF rekommenderas 
+        för att skydda huden. Behandlingen är inte lämplig för gravida 
+        eller personer med aktiv akne eller hudsjukdomar.<br /><br />
+
+      Behandlingsområden:
  <ul>
-          <li>Ärr</li>
-          <li>Akne</li>
-          <li>Pigmenteringar</li>
-          <li>Rosacea</li>
-          <li>Strier</li>
-          <li>Lyster, fukt</li>
+          <li>Ansikte</li>
+          <li>Hals</li>
+          <li>Dekoltage</li>
+         
         </ul>
 `}
       details={[

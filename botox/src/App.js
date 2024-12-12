@@ -18,7 +18,7 @@ import Injektion from "./component/js/behandlingsutbud/Injektionsbehandlingar";
 import ScrollToTop from "./component/js/ScrollToTop";
 import "./App.css";
 import Trådlyft from "./component/js/behandlingsutbud/Trådlyft";
-import HydraFacial from "./component/js/behandlingsutbud/HydraFacial";
+import HydraFacial from "./component/js/behandlingsutbud/hydrafacial/HydraFacial";
 import Massage from "./component/js/behandlingsutbud/massage/Massagee";
 import Vaxning from "./component/js/behandlingsutbud/vaxningg/Vaxning";
 import RelaxTime from "./component/js/behandlingsutbud/massage/RelaxingTime";
@@ -49,6 +49,10 @@ import LEDLjusterapi from "./component/js/behandlingsutbud/ansiktsbehandlingar/L
 import LyxAnsiktsbehandling from "./component/js/behandlingsutbud/ansiktsbehandlingar/Lyx-ansiktsbehandling";
 import Microneedling from "./component/js/behandlingsutbud/ansiktsbehandlingar/Microneedling";
 import PRXT33 from "./component/js/behandlingsutbud/ansiktsbehandlingar/PRXT-33";
+import DeluxHydraFacial from "./component/js/behandlingsutbud/hydrafacial/Deluxe-HydraFacial";
+import PlatinumHydraFacial from "./component/js/behandlingsutbud/hydrafacial/Platinum-HydraFacial";
+import StandardHydraFacial from "./component/js/behandlingsutbud/hydrafacial/Standard-HydraFacial";
+import GravidaHydraFacial from "./component/js/behandlingsutbud/hydrafacial/HydraFacial-Gravida";
 
 function App() {
   return (
@@ -64,6 +68,11 @@ function App() {
           <Route path="/Huvudbehandlingar" element={<Huvudbehandling />} /> {/* <-- DENNA SKA BORT*/ }
           <Route path="/Trådlyft" element={<Trådlyft />} /> 
           <Route path="/HydraFacial" element={<HydraFacial />} /> 
+          <Route path="/Deluxe-HydraFacial" element={<DeluxHydraFacial />} /> 
+          <Route path="/Platinum-HydraFacial" element={<PlatinumHydraFacial />} />
+          <Route path="/Standard-HydraFacial" element={<StandardHydraFacial />} /> 
+          <Route path="/HydraFacial-Gravida" element={<GravidaHydraFacial />} /> 
+         
           <Route path="/Massagee" element={<Massage />} /> 
           <Route path="/RelaxingTime" element={<RelaxTime />} /> 
           <Route path="/KlippkortX5" element={<KlippkortX5 />} /> 
