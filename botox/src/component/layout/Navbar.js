@@ -8,6 +8,7 @@ import logo from '../img/logga.png';
 const Navbar = () => {
     const [menuOpen, setMenuOpen] = useState(false); // Hanterar mobilmenyn
     const [dropdownOpen, setDropdownOpen] = useState(null); // Hanterar dropdown för desktop
+    const [subDropdownOpen, setSubDropdownOpen] = useState(null); // Hanterar sub-dropdown för desktop
     const [subMenu, setSubMenu] = useState(null); // Hanterar vilken submenu som visas
   
     const toggleMenu = () => {
@@ -25,7 +26,11 @@ const Navbar = () => {
 
     const handleDropdown = (menu) => {
         setDropdownOpen(dropdownOpen === menu ? null : menu);
+        setSubDropdownOpen(null); // Reset sub-dropdown
     };
+    const handleSubDropdown = (submenu) => {
+      setSubDropdownOpen(subDropdownOpen === submenu ? null : submenu);
+  };
 
   return (
     <header className="header-container">
@@ -36,7 +41,7 @@ const Navbar = () => {
         </Link>
         </div>
         <div className="contact-info">
-          <span>tel: 073 - 66 67 432</span>
+          <span>tel: 040 - 51 11 01</span>
           <Link to="/Bokatid">
   <button className="book-btn">Boka tid</button>
 </Link>
@@ -55,38 +60,94 @@ const Navbar = () => {
         </div>
       </div>
       {/* Desktop Navigation */}
-      <nav className={`navbar-bottom ${menuOpen ? "active" : ""}`}>
-        <ul className="nav-links">
-          <li onMouseEnter={() => handleDropdown("behandlingsutbud")} onMouseLeave={() => handleDropdown(null)}>
-            <Link to="/Behandlingsutbud">BEHANDLINGSUTBUD</Link>
-            {dropdownOpen === "behandlingsutbud" && (
-              <ul className="dropdown">
-                <li><Link to="/Injektionsbehandlingar">Injektionsbehandlingar</Link></li>
-                <li><Link to="/Trådlyft">Trådlyft</Link></li>
-                <li><Link to="/Laserbehandlingar">Laserbehandlingar</Link></li>
-                <li><Link to="/Ansiktsbehandlingar">Ansiktsbehandlingar</Link></li>
-                <li><Link to="/HydraFacial">Hydra Facial</Link></li>
-                <li><Link to="/Massagee">Massage</Link></li>
-                <li><Link to="/Vaxning">Vaxning</Link></li>
+{/* Desktop Navigation */}
+<nav className={`navbar-bottom ${menuOpen ? "active" : ""}`}>
+  <ul className="nav-links">
+    <li
+      onMouseEnter={() => handleDropdown("behandlingsutbud")}
+      onMouseLeave={() => handleDropdown(null)}
+      className="dropdown-container"
+    >
+      <Link to="/Behandlingsutbud">BEHANDLINGSUTBUD</Link>
+      {dropdownOpen === "behandlingsutbud" && (
+        <div className="full-width-dropdown">
+          <ul className="dropdown-grid">
+            <li>
+              <Link to="/Injektionsbehandlingar">Injektionsbehandlingar</Link>
+            </li>
+            <li>
+              <Link to="/Trådlyft">Trådlyft</Link>
+              <ul>
+                <li>
+                  <Link to="/Tradlyft-Midface">Trådlyft | Midface</Link>
+                </li>
+                <li>
+                  <Link to="/Tradlyft-Kaklinjen">Trådlyft | Käklinjen</Link>
+                </li>
+                <li>
+                  <Link to="/Tradlyft-Kindben">Trådlyft | Kindben</Link>
+                </li>
+                <li>
+                  <Link to="/Tradlyft-Halslyft">Trådlyft | Halslyft</Link>
+                </li>
+                <li>
+                  <Link to="/Tradlyft-Dubbelhaka">Trådlyft | Dubbelhaka</Link>
+                </li>
+                <li>
+                  <Link to="/Mono-Kinder">Mono | Kinder</Link>
+                </li>
+                <li>
+                  <Link to="/Mono-Marionettlinjer">Mono | Marionettlinjer</Link>
+                </li>
+                <li>
+                  <Link to="/Mono-Nasolabiala">Mono | Nasolabiala</Link>
+                </li>
+                <li>
+                  <Link to="/Mono-Ogon">Mono | Ögon</Link>
+                </li>
+                <li>
+                  <Link to="/Mono-Suramungipor">Mono | Suramungipor</Link>
+                </li>
               </ul>
-            )}
-          </li>
-          <li onMouseEnter={() => handleDropdown("priser")} onMouseLeave={() => handleDropdown(null)}>
-            <Link to="/Priser">PRISER</Link>
-            {dropdownOpen === "priser" && (
-              <ul className="dropdown">
-                <li><Link to="/PrisInjektionsbehandlingar">Injektionsbehandlingar</Link></li>
-                <li><Link to="/PrisAnsiktsbehandlingar">Ansiktsbehandlingar</Link></li>
-                <li><Link to="/PrisLaserbehandlingar">Laserbehandlingar</Link></li>
-              </ul>
-            )}
-          </li>
-          <li><Link to="/Omoss">OM OSS</Link></li>
-          <li><Link to="/Utbildningar">UTBILDNINGAR</Link></li>
-          <li><Link to="/Kontakt">KONTAKT</Link></li>
-          <li><Link to="/HittaBehandling">HITTA RÄTT BEHANDLING</Link></li>
-        </ul>
-      </nav>
+            </li>
+            <li>
+              <Link to="/Laserbehandlingar">Laserbehandlingar</Link>
+            </li>
+            <li>
+              <Link to="/Ansiktsbehandlingar">Ansiktsbehandlingar</Link>
+            </li>
+            <li>
+              <Link to="/HydraFacial">Hydra Facial</Link>
+            </li>
+            <li>
+              <Link to="/Massagee">Massage</Link>
+            </li>
+            <li>
+              <Link to="/Vaxning">Vaxning</Link>
+            </li>
+          </ul>
+        </div>
+      )}
+    </li>
+    <li>
+      <Link to="/Priser">PRISER</Link>
+    </li>
+    <li>
+      <Link to="/Omoss">OM OSS</Link>
+    </li>
+    <li>
+      <Link to="/Utbildningar">UTBILDNINGAR</Link>
+    </li>
+    <li>
+      <Link to="/Kontakt">KONTAKT</Link>
+    </li>
+    <li>
+      <Link to="/HittaBehandling">HITTA RÄTT BEHANDLING</Link>
+    </li>
+  </ul>
+</nav>
+
+
 
        {/* Mobil Navigation */}
        <div className={`mobile-menu ${menuOpen ? "open" : ""}`}>
@@ -114,13 +175,35 @@ const Navbar = () => {
                 ) : subMenu === "behandlingsutbud" ? (
                     <ul className="mobile-submenu">
                         <li><Link to="/Injektionsbehandlingar" onClick={toggleMenu}>Injektionsbehandlingar</Link></li>
-                        <li><Link to="/Trådlyft" onClick={toggleMenu}>Trådlyft</Link></li>
+                        <li onClick={() => openSubMenu("trådlyft")}>
+                            Trådlyft <span className="arrow">›</span>
+                        </li>
                         <li><Link to="/Laserbehandlingar" onClick={toggleMenu}>Laserbehandlingar</Link></li>
                         <li><Link to="/Ansiktsbehandlingar" onClick={toggleMenu}>Ansiktsbehandlingar</Link></li>
                         <li><Link to="/HydraFacial" onClick={toggleMenu}>Hydra Facial</Link></li>
                         <li><Link to="/Massagee" onClick={toggleMenu}>Massage</Link></li>
                         <li><Link to="/Vaxning" onClick={toggleMenu}>Vaxning</Link></li>
                     </ul>
+
+) : subMenu === "trådlyft" ? (
+  <ul className="mobile-submenu">
+      <li><Link to="/Tradlyft-Midface" onClick={toggleMenu}>Trådlyft | Midface</Link></li>
+      <li><Link to="/Tradlyft-Kaklinjen" onClick={toggleMenu}>Trådlyft | Käklinjen</Link></li>
+      <li><Link to="/Tradlyft-Kindben" onClick={toggleMenu}>Trådlyft | Kindben</Link></li>
+      <li><Link to="/Tradlyft-Halslyft" onClick={toggleMenu}>Trådlyft | Halslyft</Link></li>
+      <li><Link to="/Tradlyft-Dubbelhaka" onClick={toggleMenu}>Trådlyft | Dubbelhaka</Link></li>
+
+
+      <li><Link to="/Mono-Kinder" onClick={toggleMenu}>Mono | Kinder</Link></li>
+      <li><Link to="/Mono-Marionettlinjer" onClick={toggleMenu}>Mono | Marionettlinjer</Link></li>
+      <li><Link to="/Mono-Nasolabiala" onClick={toggleMenu}>Mono | Nasolabiala</Link></li>
+      <li><Link to="/Mono-Ogon" onClick={toggleMenu}>Mono | Ögon</Link></li>
+      <li><Link to="/Mono-Suramungipor" onClick={toggleMenu}>Mono | Suramungipor</Link></li>
+
+
+
+
+  </ul>
                 ) : subMenu === "priser" ? (
                     <ul className="mobile-submenu">
                         <li><Link to="/PrisInjektionsbehandlingar" onClick={toggleMenu}>Injektionsbehandlingar</Link></li>
@@ -128,6 +211,7 @@ const Navbar = () => {
                         <li><Link to="/PrisLaserbehandlingar" onClick={toggleMenu}>Laserbehandlingar</Link></li>
                     </ul>
                 ) : null}
+                
             </div>
         </header>
   );

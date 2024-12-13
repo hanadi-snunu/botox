@@ -32,9 +32,9 @@ const Footer = () => {
       <div className="footer-bottom">
         <div className="footer-social">
           {/* Sociala ikoner */}
-          <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="footer-icon">
+          {/* <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="footer-icon">
             <FontAwesomeIcon icon={faFacebookF} />
-          </a>
+          </a>*/}
           <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="footer-icon">
             <FontAwesomeIcon icon={faInstagram} />
           </a>

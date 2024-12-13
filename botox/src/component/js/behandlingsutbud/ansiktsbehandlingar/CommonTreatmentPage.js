@@ -59,7 +59,14 @@ const CommonTreatmentPage = ({ backgroundImage, title, description, extraDescrip
         </div>
         <div className="session-block">
           <h2 className="session-title">Efter behandlingen</h2>
+          {afterText.includes('<br />') ? (
+      <p
+        className="session-text"
+        dangerouslySetInnerHTML={{ __html: afterText }}
+      />
+    ) : (
           <p className="session-text">{afterText}</p>
+        )}
         </div>
       </section>
 

@@ -214,44 +214,62 @@ body, html {
     color: #080808;
   }
 
-/* Justerar dropdown-menyn för bättre estetik */
-.nav-links li {
-    position: relative;
-  }
+/* Justerar dropdown-menyn för bättre estetik -->>>> DEN NYAAAAA*/ 
+.nav-links {
+  position: relative;
+}
+
+.full-width-dropdown {
+  position: absolute;
+  left: 0;
+  top: 100%;
+  width: 100%;
+  background-color: #fff;
+  z-index: 999;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: space-around;
+  padding: 20px 0;
+  margin-top: 2px;
+}
+
+.dropdown-grid {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
   
-  .dropdown {
-    position: absolute;
-    top: 100%;
-    left: 0;
-    background-color: #ffffff;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    padding: 20px;
-    border-radius: 8px;
-    min-width: 300px;
-    display: flex; /* Dölj som standard */
-    flex-direction: column;
-    z-index: 10;
-    list-style-type: none;
-  }
+}
+
+.dropdown-grid li {
+  width: 200px; /* Justera bredd per kategori */
+  margin: 10px;
+}
+
+.dropdown-grid li ul {
+  padding-left: 20px; /* Indrag för underkategorier */
+}
+
+.dropdown-grid li a {
+ 
   
-  .dropdown li {
-    padding: 20px 0;
-    white-space: nowrap;
-    list-style-type: none;
-  }
+  font: 16px Mulish, sans-serif;
+  color: #666666;
+  font-weight: 600;
+  display: block;
+  padding: 5px 0;
+}
+
+.dropdown-grid li a:hover {
+  color: #050505;
+  background-color: #f9f9f9;
+}
+
+
   
-  .dropdown li a {
-    text-decoration: none;
-    color: #333;
-    font-size: 16px; /* Gör texten större */
-    font-weight: 600;
-  }
-  
-  .dropdown li a:hover {
-    color: #050505;
-    background-color: #f9f9f9; /* En subtil hover-bakgrund */
-    
-  }
+ 
   
   
   /* Lägg till en bakgrundsfärg och bredare spacing */

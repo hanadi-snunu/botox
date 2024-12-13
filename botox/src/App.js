@@ -17,7 +17,7 @@ import Laser from "./component/js/behandlingsutbud/Laserbehandlingar";
 import Injektion from "./component/js/behandlingsutbud/Injektionsbehandlingar";
 import ScrollToTop from "./component/js/ScrollToTop";
 import "./App.css";
-import Trådlyft from "./component/js/behandlingsutbud/Trådlyft";
+import Trådlyft from "./component/js/behandlingsutbud/tradlyft/Trådlyft";
 import HydraFacial from "./component/js/behandlingsutbud/hydrafacial/HydraFacial";
 import Massage from "./component/js/behandlingsutbud/massage/Massagee";
 import Vaxning from "./component/js/behandlingsutbud/vaxningg/Vaxning";
@@ -53,6 +53,16 @@ import DeluxHydraFacial from "./component/js/behandlingsutbud/hydrafacial/Deluxe
 import PlatinumHydraFacial from "./component/js/behandlingsutbud/hydrafacial/Platinum-HydraFacial";
 import StandardHydraFacial from "./component/js/behandlingsutbud/hydrafacial/Standard-HydraFacial";
 import GravidaHydraFacial from "./component/js/behandlingsutbud/hydrafacial/HydraFacial-Gravida";
+import MonoKinder from "./component/js/behandlingsutbud/tradlyft/Mono-Kinder";
+import MonoMarionettlinjer from "./component/js/behandlingsutbud/tradlyft/Mono-Marionettlinjer";
+import MonoNasolabiala from "./component/js/behandlingsutbud/tradlyft/Mono-Nasolabiala";
+import MonoOgon from "./component/js/behandlingsutbud/tradlyft/Mono-Ogon";
+import MonoSuramungipor from "./component/js/behandlingsutbud/tradlyft/Mono-Suramungipor";
+import TradlyftDubbelhaka from "./component/js/behandlingsutbud/tradlyft/Tradlyft-Dubbelhaka";
+import TradlyftHalslyft from "./component/js/behandlingsutbud/tradlyft/Tradlyft-Halslyft";
+import TradlyftKaklinjen from "./component/js/behandlingsutbud/tradlyft/Tradlyft-Kaklinjen";
+import TradlyftKindben from "./component/js/behandlingsutbud/tradlyft/Tradlyft-Kindben";
+import TradlyftMidface from "./component/js/behandlingsutbud/tradlyft/Tradlyft-Midface";
 
 function App() {
   return (
@@ -67,12 +77,23 @@ function App() {
           <Route path="/Behandlingsutbud" element={<Behandlingsutbud />} />
           <Route path="/Huvudbehandlingar" element={<Huvudbehandling />} /> {/* <-- DENNA SKA BORT*/ }
           <Route path="/Trådlyft" element={<Trådlyft />} /> 
+          <Route path="/Mono-Kinder" element={<MonoKinder />} /> 
+          <Route path="/Mono-Marionettlinjer" element={<MonoMarionettlinjer />} /> 
+          <Route path="/Mono-Nasolabiala" element={<MonoNasolabiala />} /> 
+          <Route path="/Mono-Ogon" element={<MonoOgon />} /> 
+          <Route path="/Mono-Suramungipor" element={<MonoSuramungipor />} /> 
+          <Route path="/Tradlyft-Dubbelhaka" element={<TradlyftDubbelhaka />} /> 
+          <Route path="/Tradlyft-Halslyft" element={<TradlyftHalslyft />} /> 
+          <Route path="/Tradlyft-Kaklinjen" element={<TradlyftKaklinjen />} /> 
+          <Route path="/Tradlyft-Kindben" element={<TradlyftKindben />} />
+          <Route path="/Tradlyft-Midface" element={<TradlyftMidface />} />
+          
+          
           <Route path="/HydraFacial" element={<HydraFacial />} /> 
           <Route path="/Deluxe-HydraFacial" element={<DeluxHydraFacial />} /> 
           <Route path="/Platinum-HydraFacial" element={<PlatinumHydraFacial />} />
           <Route path="/Standard-HydraFacial" element={<StandardHydraFacial />} /> 
           <Route path="/HydraFacial-Gravida" element={<GravidaHydraFacial />} /> 
-         
           <Route path="/Massagee" element={<Massage />} /> 
           <Route path="/RelaxingTime" element={<RelaxTime />} /> 
           <Route path="/KlippkortX5" element={<KlippkortX5 />} /> 
