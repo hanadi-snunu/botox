@@ -32,7 +32,7 @@ const Armar = () => {
             <div className="relax-treatment-details">
               <ul>
                 <li><strong>Behandlingstid:</strong> 30 min</li>
-                <li><strong>Pris:</strong> 400 kr</li>
+                <li><strong>Pris:</strong> 300 kr</li>
                 <li><strong>Fördelar:</strong> Silkeslen hud, minskad hårväxt, långvarigt resultat</li>
                 <li><strong>Rekommenderat för:</strong> Alla som vill ha hårfria och mjuka armar</li>
               </ul>

@@ -18,8 +18,8 @@ vi det till ett kombinations pris, microneedling för 1000:- tillägg och profhi
 tillägg. Detta är för dig som vill maximera både i hudens yta och djup för att få det 
 bästa möjliga resultatet! `}
       details={[
-        { label: 'Behandlingstid', value: '45 min' },
-        { label: 'Pris', value: '1200 kr' },
+        { label: 'Behandlingstid', value: 'Varierar' },
+        { label: 'Pris', value: 'Varierar' },
         { label: 'Fördelar', value: 'Reducerar fina linjer, förbättrad elasticitet, naturlig lyster' },
         { label: 'Rekommenderat för', value: 'Trött, åldrande eller skadad hud' },
       ]}

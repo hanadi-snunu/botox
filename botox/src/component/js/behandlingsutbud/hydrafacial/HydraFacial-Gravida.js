@@ -19,8 +19,8 @@ const GravidaHydraFacial = () => {
       krämer som även där är valt med omtanke som passar för gravida kvinnor, 
       under denna tiden för att toppa med lite extra lys erbjuds det hårbottensmassage! "
       details={[
-        { label: 'Behandlingstid', value: '50 min' },
-        { label: 'Pris', value: '1200 kr' },
+        { label: 'Behandlingstid', value: '45 min' },
+        { label: 'Pris', value: '1195 kr' },
         { label: 'Fördelar', value: 'Mild återfuktning, reducerad svullnad, lugnande effekt' },
         { label: 'Rekommenderat för', value: 'Gravida som vill ha en skonsam ansiktsbehandling' },
       ]}

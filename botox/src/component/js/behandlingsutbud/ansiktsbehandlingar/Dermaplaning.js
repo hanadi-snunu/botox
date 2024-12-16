@@ -17,7 +17,7 @@ Rekommenderat antalet behandlingar är var 3-5 veckor för att bibehålla samma 
 "
       details={[
         { label: 'Behandlingstid', value: '45 min' },
-        { label: 'Pris', value: '600 kr' },
+        { label: 'Pris', value: '850 kr' },
         { label: 'Fördelar', value: 'Slät hud, förbättrad textur, ökad lyster' },
         { label: 'Rekommenderat för', value: 'Alla som vill ha en jämnare och klarare hud' },
       ]}

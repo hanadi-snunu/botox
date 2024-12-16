@@ -31,7 +31,7 @@ const Overlapp = () => {
             <div className="relax-treatment-details">
               <ul>
                 <li><strong>Behandlingstid:</strong> 15 min</li>
-                <li><strong>Pris:</strong> 150 kr</li>
+                <li><strong>Pris:</strong> 50 kr</li>
                 <li><strong>Fördelar:</strong> Slät hud, snabb och effektiv behandling</li>
                 <li><strong>Rekommenderat för:</strong> De som vill ha en hårfri och mjuk överläpp</li>
               </ul>

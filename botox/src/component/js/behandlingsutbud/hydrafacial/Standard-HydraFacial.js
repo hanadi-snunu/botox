@@ -18,7 +18,7 @@ const StandardHydraFacial = () => {
       återfuktad hy!"
       details={[
         { label: 'Behandlingstid', value: '45 min' },
-        { label: 'Pris', value: '1000 kr' },
+        { label: 'Pris', value: '1195 kr' },
         { label: 'Fördelar', value: 'Rengöring, återfuktning, förbättrad hudstruktur' },
         { label: 'Rekommenderat för', value: 'Alla hudtyper som vill ha en snabb och effektiv behandling' },
       ]}

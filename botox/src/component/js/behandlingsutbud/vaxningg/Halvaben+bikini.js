@@ -31,8 +31,8 @@ const HalvabenBikini = () => {
           <div className="relax-treatment-details-container">
             <div className="relax-treatment-details">
               <ul>
-                <li><strong>Behandlingstid:</strong> 45 min</li>
-                <li><strong>Pris:</strong> 600 kr</li>
+                <li><strong>Behandlingstid:</strong> 60 min</li>
+                <li><strong>Pris:</strong> 550 kr</li>
                 <li><strong>Fördelar:</strong> Långvarigt resultat, mjuk hud, bekvämt och effektivt</li>
                 <li><strong>Rekommenderat för:</strong> De som önskar en kombinerad behandling för ben och bikinilinje</li>
               </ul>

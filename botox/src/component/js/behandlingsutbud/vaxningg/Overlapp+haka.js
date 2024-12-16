@@ -30,8 +30,8 @@ const OverlappHaka = () => {
           <div className="relax-treatment-details-container">
             <div className="relax-treatment-details">
               <ul>
-                <li><strong>Behandlingstid:</strong> 20 min</li>
-                <li><strong>Pris:</strong> 250 kr</li>
+                <li><strong>Behandlingstid:</strong> 150 min</li>
+                <li><strong>Pris:</strong> 100 kr</li>
                 <li><strong>Fördelar:</strong> Långvarigt resultat, skonsam för känslig hud, effektiv och snabb behandling</li>
                 <li><strong>Rekommenderat för:</strong> De som vill ha en ren och hårfri hud på överläpp och haka</li>
               </ul>

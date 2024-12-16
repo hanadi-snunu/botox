@@ -31,8 +31,8 @@ const Helaben = () => {
           <div className="relax-treatment-details-container">
             <div className="relax-treatment-details">
               <ul>
-                <li><strong>Behandlingstid:</strong> 60 min</li>
-                <li><strong>Pris:</strong> 800 kr</li>
+                <li><strong>Behandlingstid:</strong> 30 min</li>
+                <li><strong>Pris:</strong> 500 kr</li>
                 <li><strong>Fördelar:</strong> Långvarigt resultat, jämn hud, minskar hårväxt över tid</li>
                 <li><strong>Rekommenderat för:</strong> De som önskar släta och hårfria ben under en längre tid</li>
               </ul>

@@ -29,7 +29,7 @@ const AnsiktsMassage = () => {
             <div className="relax-treatment-details">
               <ul>
                 <li><strong>Behandlingstid:</strong> 30 min</li>
-                <li><strong>Pris:</strong> 400 kr</li>
+                <li><strong>Pris:</strong> 450 kr</li>
                 <li><strong>Fördelar:</strong> Förbättrad cirkulation, avslappning, hudföryngring</li>
                 <li><strong>Rekommenderat för:</strong> Alla som vill ha en avslappnande och föryngrande ansiktsbehandling</li>
               </ul>

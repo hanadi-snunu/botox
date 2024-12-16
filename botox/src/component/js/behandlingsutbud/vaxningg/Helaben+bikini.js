@@ -30,8 +30,8 @@ const HelabenBikini = () => {
           <div className="relax-treatment-details-container">
             <div className="relax-treatment-details">
               <ul>
-                <li><strong>Behandlingstid:</strong> 75 min</li>
-                <li><strong>Pris:</strong> 1000 kr</li>
+                <li><strong>Behandlingstid:</strong> 60 min</li>
+                <li><strong>Pris:</strong> 550 kr</li>
                 <li><strong>Fördelar:</strong> Långvarigt resultat, slät hud, minskar hårväxt över tid</li>
                 <li><strong>Rekommenderat för:</strong> De som önskar släta ben och en välvårdad bikinilinje utan dagligt underhåll</li>
               </ul>

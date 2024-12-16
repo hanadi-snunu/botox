@@ -20,7 +20,7 @@ const PlatinumHydraFacial = () => {
       med näringsämnen, peptider, hyaluronsyra och antioidanter!"
       details={[
         { label: 'Behandlingstid', value: '75 min' },
-        { label: 'Pris', value: '2000 kr' },
+        { label: 'Pris', value: '1795 kr' },
         { label: 'Fördelar', value: 'Ökad cirkulation, reducerad svullnad, intensiv återfuktning' },
         { label: 'Rekommenderat för', value: 'De som söker en avancerad och fullständig behandling' },
       ]}

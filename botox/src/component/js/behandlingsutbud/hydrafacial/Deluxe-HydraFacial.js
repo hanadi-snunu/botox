@@ -16,7 +16,7 @@ const DeluxHydraFacial = () => {
        vilket lämnar dig med ett fantastiskt resultat framöver!"
       details={[
         { label: 'Behandlingstid', value: '60 min' },
-        { label: 'Pris', value: '1500 kr' },
+        { label: 'Pris', value: '1495 kr' },
         { label: 'Fördelar', value: 'Reducerar fina linjer, förbättrad elasticitet, jämnare hudton' },
         { label: 'Rekommenderat för', value: 'Alla hudtyper som behöver extra vård och återfuktning' },
       ]}

@@ -29,7 +29,7 @@ const KlippkortX5 = () => {
             <div className="relax-treatment-details">
               <ul>
                 <li><strong>Antal behandlingar:</strong> 5 behandlingar</li>
-                <li><strong>Pris:</strong> 2700 kr (spara 300 kr)</li>
+                <li><strong>Pris:</strong> 2000 kr</li>
                 <li><strong>Fördelar:</strong> Flexibilitet, rabatterat pris, regelbunden avkoppling</li>
                 <li><strong>Rekommenderat för:</strong> Alla som vill ha kontinuerlig stresshantering och välmående</li>
               </ul>

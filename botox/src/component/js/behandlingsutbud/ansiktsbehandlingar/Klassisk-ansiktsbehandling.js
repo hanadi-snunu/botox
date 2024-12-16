@@ -16,7 +16,7 @@ rengöring, peeling och portömnimg. Därefter återfuktas din hud med fukt och
 ansiktsmask och en avslappnande ansikts massage! "
       details={[
         { label: 'Behandlingstid', value: '60 min' },
-        { label: 'Pris', value: '700 kr' },
+        { label: 'Pris', value: '749 kr' },
         { label: 'Fördelar', value: 'Rengjord hud, förbättrad återfuktning, frisk lyster' },
         { label: 'Rekommenderat för', value: 'Alla hudtyper som behöver en boost' },
       ]}

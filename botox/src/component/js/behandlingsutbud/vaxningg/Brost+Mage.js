@@ -30,8 +30,8 @@ const BrostMage = () => {
           <div className="relax-treatment-details-container">
             <div className="relax-treatment-details">
               <ul>
-                <li><strong>Behandlingstid:</strong> 30-45 min</li>
-                <li><strong>Pris:</strong> 450 kr</li>
+                <li><strong>Behandlingstid:</strong> 30 min</li>
+                <li><strong>Pris:</strong> 400 kr</li>
                 <li><strong>Fördelar:</strong> Slät hud, långvarigt resultat, minskar hårväxt över tid</li>
                 <li><strong>Rekommenderat för:</strong> Alla som vill ha en slät och hårfri hud på bröst och mage</li>
               </ul>

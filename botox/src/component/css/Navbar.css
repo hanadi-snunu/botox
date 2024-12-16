@@ -165,6 +165,23 @@ body, html {
   font-size: 16px;
   font-weight: 600;
   color: #444;
+  text-align: center;
+  flex: 1;
+  margin-left: 20px;
+}
+/* Tillbaka-knappen */
+.mobile-back {
+  padding: 10px 15px;
+  font-size: 16px;
+  color: #333;
+  cursor: pointer;
+  border-bottom: 1px solid #ddd;
+  font-weight: 500;
+}
+
+.mobile-back .back-icon {
+  display: inline-block;
+  margin-left: 10px;
 }
 
 .mobile-menu-links {
@@ -180,26 +197,41 @@ body, html {
 
 .mobile-menu-links li a {
   text-decoration: none;
-  color: #444;
-  font-weight: 600;
+  color: #666666;
+  font: 22px "Old Standard TT", Serif;
 }
 
 
 
   /* Stil för undermenyn i mobilvyn */
+
 .mobile-submenu {
     list-style: none;
-    padding: 20px;
-    margin: 0;
+    max-height: 70vh; /* Sätter en maxhöjd för listan */
+    overflow-y: auto; /* Lägg till en vertikal scrollbar om innehållet överstiger maxhöjden */
+    padding-right: 10px; /* Litet avstånd för att ge utrymme för scrollbaren */
    
   }
   
   .mobile-submenu li {
-    font-size: 16px;
+    font-size: 18px;
     color: #444;
     padding: 30px 0;
     border-bottom: 1px solid #eee;
   }
+  /* Anpassar utseendet för scrollbaren */
+.mobile-submenu::-webkit-scrollbar {
+  width: 6px; /* Bredd på scrollbaren */
+}
+
+.mobile-submenu::-webkit-scrollbar-track {
+  background: #f1f1f1; /* Bakgrundsfärg för scroll-track */
+}
+
+.mobile-submenu::-webkit-scrollbar-thumb {
+  background-color: #c1c1c1; /* Färg på själva scrollbaren */
+  border-radius: 10px; /* Rundade hörn */
+}
   
   /* För att justera länkarna så att de ser klickbara ut */
   .mobile-menu-links a,
@@ -213,6 +245,35 @@ body, html {
   .mobile-submenu a:hover {
     color: #080808;
   }
+
+  /* För att styra pilen och dess position */
+.submenu-trigger {
+  display: flex;
+  justify-content: space-between; /* Separera texten och pilen */
+  align-items: center; /* Centrera texten och pilen vertikalt */
+  padding: 10px 0; /* Ger mer mellanrum över och under */
+}
+
+.submenu-trigger a {
+  flex: 1; /* Låter texten ta upp tillgängligt utrymme */
+  text-decoration: none;
+  color: #333; /* Färg på texten */
+  font-size: 16px; /* Ändra textstorleken här */
+}
+
+.submenu-trigger .arrow {
+  font-size: 16px; /* Storlek på pilen */
+  color: #666; /* Färg på pilen */
+  cursor: pointer; /* Visar att pilen är klickbar */
+  transition: transform 0.2s ease-in-out; /* Ger en snygg effekt */
+}
+
+.submenu-trigger .arrow:hover {
+  color: #000; /* Pilen ändrar färg vid hover */
+  transform: translateX(5px); /* Skjuter pilen lite till höger vid hover */
+}
+
+  
 
 /* Justerar dropdown-menyn för bättre estetik -->>>> DEN NYAAAAA*/ 
 .nav-links {
@@ -228,9 +289,10 @@ body, html {
   z-index: 999;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   display: flex;
-  justify-content: space-around;
-  padding: 20px 0;
-  margin-top: 2px;
+  justify-content: space-between; /* Jämnt mellan kolumnerna */
+  flex-wrap: nowrap; /* Tillåt ej radbrytning för huvudkategorier */
+  padding: 40px 20px; /* Mer luft runt dropdown */
+  box-sizing: border-box;
 }
 
 .dropdown-grid {
@@ -238,44 +300,65 @@ body, html {
   margin: 0;
   padding: 0;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
+  flex-wrap: nowrap; /* Håll kategorierna i en rad */
+  justify-content: space-between; /* Jämn fördelning med liknande avstånd */
+  gap: 20px; /* Mellanrum mellan kolumner */
   
+}
+/* Huvudkategori-stil */
+.dropdown-grid > li {
+  flex: 1; /* Fördela lika mycket utrymme för varje kolumn */
+  text-align: left;
+}
+
+/* Huvudkategori-stil */
+.dropdown-grid > li > a {
+  font: 16px "Old Standard TT", Serif; /* Större textstorlek */
+  color: #666666;
+  display: block;
+  padding: 15px 0;
+}
+
+.dropdown-grid > li > a:hover {
+  color: #666666;
+}
+
+/* Underkategori-stil */
+.dropdown-grid li ul li a {
+  font: 16px "Old Standard TT", Serif; /* Mindre textstorlek */
+  font-weight: normal; /* Lättare text */
+  color: #999999; /* Ljusare färg för underkategorier */
+  display: block;
+  padding: 5px 0; /* Mindre padding */
+ 
+}
+.dropdown-grid li ul li {
+  margin: 5px 0; /* Lägger lite avstånd mellan underkategorier */
+}
+.dropdown-grid li ul li a:hover {
+  color: #666666; /* Mörkare färg vid hover */
+  text-decoration: underline; /* Understrykning för bättre synlighet */
+  background-color: transparent; /* Ingen bakgrund vid hover */
+}
+
+/* Anpassning av underkategoriens placering */
+.dropdown-grid li ul {
+  list-style: none;
+  padding-left: 0; /* Lite indrag för bättre struktur */
+  margin: 0;
 }
 
 .dropdown-grid li {
-  width: 200px; /* Justera bredd per kategori */
+  width: 200px; /* Bredd på huvudkategorin */
   margin: 10px;
 }
 
-.dropdown-grid li ul {
-  padding-left: 20px; /* Indrag för underkategorier */
-}
-
-.dropdown-grid li a {
- 
-  
-  font: 16px Mulish, sans-serif;
-  color: #666666;
-  font-weight: 600;
-  display: block;
-  padding: 5px 0;
-}
-
-.dropdown-grid li a:hover {
-  color: #050505;
-  background-color: #f9f9f9;
-}
-
-
-  
- 
-  
-  
   /* Lägg till en bakgrundsfärg och bredare spacing */
 .nav-links li:hover .dropdown {
     display: flex; /* Visa dropdown vid hover för desktop */
 }
+
+
 
 
 

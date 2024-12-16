@@ -31,7 +31,7 @@ const Halvaben = () => {
             <div className="relax-treatment-details">
               <ul>
                 <li><strong>Behandlingstid:</strong> 30 min</li>
-                <li><strong>Pris:</strong> 400 kr</li>
+                <li><strong>Pris:</strong> 350 kr</li>
                 <li><strong>Fördelar:</strong> Långvarigt resultat, mjuk och jämn hud, reducerad hårväxt över tid</li>
                 <li><strong>Rekommenderat för:</strong> Alla som vill ha ett långvarigt hårfritt resultat på halva benen</li>
               </ul>

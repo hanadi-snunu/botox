@@ -14,8 +14,8 @@ från djupet men även ytligt för bästa resultat. Instant glow ger dig ett fan
 och glans som passar utmärkt för dig som ska ha snabbt resultat inför ett event eller 
 bara saknar det där extra!"
       details={[
-        { label: 'Behandlingstid', value: '45 min' },
-        { label: 'Pris', value: '500 kr' },
+        { label: 'Behandlingstid', value: '30 min' },
+        { label: 'Pris', value: '450 kr' },
         { label: 'Fördelar', value: 'Omedelbar lyster, återfuktning, friskare hudton' },
         { label: 'Rekommenderat för', value: 'Alla som vill ha en snabb huduppfräschning' },
       ]}

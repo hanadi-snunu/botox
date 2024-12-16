@@ -15,8 +15,8 @@ const DjuprensandeAnsiktsbehandling = () => {
       ingår produkter som är anpassade efter din hudtyp och dina besvär. Utöver att man aktivt genomför 
       en behandling som är inriktad speciellt efter dina behov får du även en avkopplande massage och ansiktsmask!`}
       details={[
-        { label: 'Behandlingstid', value: '75 min' },
-        { label: 'Pris', value: '850 kr' },
+        { label: 'Behandlingstid', value: '60 min' },
+        { label: 'Pris', value: '949 kr' },
         { label: 'Fördelar', value: 'Rengöring på djupet, reducerade porer, förbättrad hudstruktur' },
         { label: 'Rekommenderat för', value: 'Fet, blandad eller acnebenägen hud' },
       ]}

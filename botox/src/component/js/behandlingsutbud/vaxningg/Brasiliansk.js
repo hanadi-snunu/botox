@@ -31,8 +31,8 @@ const Brasiliansk = () => {
           <div className="relax-treatment-details-container">
             <div className="relax-treatment-details">
               <ul>
-                <li><strong>Behandlingstid:</strong> 30-45 min</li>
-                <li><strong>Pris:</strong> 500 kr</li>
+                <li><strong>Behandlingstid:</strong> 15 min</li>
+                <li><strong>Pris:</strong> 400 kr</li>
                 <li><strong>Fördelar:</strong> Långvarigt resultat, reducerad hårväxt, slät hud</li>
                 <li><strong>Rekommenderat för:</strong> Alla som vill ha en noggrant utförd intimvaxning med ett långvarigt resultat</li>
               </ul>

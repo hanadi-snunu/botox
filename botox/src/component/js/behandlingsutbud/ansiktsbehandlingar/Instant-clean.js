@@ -16,7 +16,7 @@ komplement emellan ansiktsbehandlingar för att underhålla huden så fin och re
 möjligt! "
       details={[
         { label: 'Behandlingstid', value: '30 min' },
-        { label: 'Pris', value: '400 kr' },
+        { label: 'Pris', value: '550 kr' },
         { label: 'Fördelar', value: 'Renare hud, minskad oljighet, friskare utseende' },
         { label: 'Rekommenderat för', value: 'Personer med oljig och aknebenägen hud' },
       ]}

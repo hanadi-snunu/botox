@@ -32,8 +32,8 @@ const RelaxTime = () => {
   <div className="relax-treatment-details-container">
     <div className="relax-treatment-details">
       <ul>
-        <li><strong>Behandlingstid:</strong> 60 min</li>
-        <li><strong>Pris:</strong> 600 kr</li>
+        <li><strong>Behandlingstid:</strong> 30 min</li>
+        <li><strong>Pris:</strong> 450 kr</li>
         <li><strong>Typ av massage:</strong> Avkopplande helkroppsmassage, skalpmassage</li>
         <li><strong>Fördelar:</strong> Minskad stress, förbättrad blodcirkulation, avslappning</li>
         <li><strong>Rekommenderat för:</strong> Alla som behöver minska spänningar och stress</li>

@@ -30,8 +30,8 @@ const Microneedling = () => {
         </ul>
 `}
       details={[
-        { label: 'Behandlingstid', value: '60 min' },
-        { label: 'Pris', value: '1500 kr' },
+        { label: 'Behandlingstid', value: 'Varierar' },
+        { label: 'Pris', value: 'Varierar' },
         { label: 'Fördelar', value: 'Ökad kollagenproduktion, jämnare hudton, minskade ärr' },
         { label: 'Rekommenderat för', value: 'Alla hudtyper som vill förbättra hudens struktur' },
       ]}

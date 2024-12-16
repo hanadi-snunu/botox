@@ -31,7 +31,7 @@ const ArmarMan = () => {
             <div className="relax-treatment-details">
               <ul>
                 <li><strong>Behandlingstid:</strong> 30 min</li>
-                <li><strong>Pris:</strong> 500 kr</li>
+                <li><strong>Pris:</strong> 400 kr</li>
                 <li><strong>Fördelar:</strong> Långvarigt resultat, minskar hårväxt över tid, jämn och slät hud</li>
                 <li><strong>Rekommenderat för:</strong> Män som vill ha hårfria och mjuka armar</li>
               </ul>

@@ -16,8 +16,8 @@ hud all kärlek den behöver. Alla steg kan därför maximeras under denna lyxig
 behandling samt de lite extra fina produkterna för att ge dig bästa möjliga upplevelsen. 
 Lyxigare än detta blir det inte!`}
       details={[
-        { label: 'Behandlingstid', value: '90 min' },
-        { label: 'Pris', value: '1200 kr' },
+        { label: 'Behandlingstid', value: '75 min' },
+        { label: 'Pris', value: '1049 kr' },
         { label: 'Fördelar', value: 'Förbättrad hudelasticitet, lyster, avslappning' },
         { label: 'Rekommenderat för', value: 'Alla som vill unna sig en lyxig behandling' },
       ]}

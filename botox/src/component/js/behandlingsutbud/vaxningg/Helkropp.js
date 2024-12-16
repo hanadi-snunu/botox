@@ -31,8 +31,8 @@ const Helkropp = () => {
           <div className="relax-treatment-details-container">
             <div className="relax-treatment-details">
               <ul>
-                <li><strong>Behandlingstid:</strong> 90 min</li>
-                <li><strong>Pris:</strong> 1200 kr</li>
+                <li><strong>Behandlingstid:</strong> 120 min</li>
+                <li><strong>Pris:</strong> 1800 kr</li>
                 <li><strong>Fördelar:</strong> Långvarigt resultat, jämn hud, minskar hårväxt över tid</li>
                 <li><strong>Rekommenderat för:</strong> Alla som vill ha en slät och hårfri hud på hela kroppen</li>
               </ul>

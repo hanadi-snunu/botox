@@ -29,8 +29,8 @@ const Bikini = () => {
           <div className="relax-treatment-details-container">
             <div className="relax-treatment-details">
               <ul>
-                <li><strong>Behandlingstid:</strong> 20 min</li>
-                <li><strong>Pris:</strong> 350 kr</li>
+                <li><strong>Behandlingstid:</strong> 30 min</li>
+                <li><strong>Pris:</strong> 250 kr</li>
                 <li><strong>Fördelar:</strong> Långvarigt resultat, minskad hårväxt, slät hud</li>
                 <li><strong>Rekommenderat för:</strong> Alla som vill ha en hårfri bikinilinje med långvariga resultat</li>
               </ul>
