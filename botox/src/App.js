@@ -8,7 +8,7 @@ import Huvudbehandling from "./component/js/Huvudbehandlingar";
 import Hittabehandling from "./component/js/HittaBehandling";
 import Kontakt from "./component/js/Kontakt";
 import Omoss from "./component/js/Omoss";
-import Priser from "./component/js/Priser";
+import Priser from "./component/js/behandlingsutbud/priser/Priser";
 import Utbildning from "./component/js/Utbildningar";
 import BokaTid from "./component/js/Bokatid";
 import Integritetspolicy from "./component/js/Integritetspolicy";
@@ -63,6 +63,13 @@ import TradlyftHalslyft from "./component/js/behandlingsutbud/tradlyft/Tradlyft-
 import TradlyftKaklinjen from "./component/js/behandlingsutbud/tradlyft/Tradlyft-Kaklinjen";
 import TradlyftKindben from "./component/js/behandlingsutbud/tradlyft/Tradlyft-Kindben";
 import TradlyftMidface from "./component/js/behandlingsutbud/tradlyft/Tradlyft-Midface";
+import InjektionsbehandlingarPris from "./component/js/behandlingsutbud/priser/injektionsbehandlingar-priser";
+import TradlyftPriser from "./component/js/behandlingsutbud/priser/tradlyft-priser";
+import VaxningPriser from "./component/js/behandlingsutbud/priser/vaxning-priser";
+import MassagePriser from "./component/js/behandlingsutbud/priser/massage-priser";
+import HydraFacialPriser from "./component/js/behandlingsutbud/priser/hydra-facial-priser";
+import AnsiktsbehandlingarPriser from "./component/js/behandlingsutbud/priser/ansiktsbehandlingar-priser";
+import LaserbehandlingarPris from "./component/js/behandlingsutbud/priser/laserbehandlingar-priser";
 
 function App() {
   return (
@@ -131,8 +138,16 @@ function App() {
           <Route path="/Kontakt" element={<Kontakt />} />
           <Route path="/Omoss" element={<Omoss />} />
           <Route path="/Priser" element={<Priser />} />
-          <Route path="/Utbildningar" element={<Utbildning />} />
+          <Route path="/injektionsbehandlingar-priser" element={<InjektionsbehandlingarPris />} />
+          <Route path="/tradlyft-priser" element={<TradlyftPriser />} />
+          <Route path="/vaxning-priser" element={<VaxningPriser />} />
+          <Route path="/massage-priser" element={<MassagePriser />} />
+          <Route path="/hydra-facial-priser" element={<HydraFacialPriser />} />
+          <Route path="/ansiktsbehandlingar-priser" element={<AnsiktsbehandlingarPriser />} />
+          <Route path="/laserbehandlingar-priser" element={<LaserbehandlingarPris />} />
+
           
+          <Route path="/Utbildningar" element={<Utbildning />} />
           <Route path="/Laserbehandlingar" element={<Laser />} />
           <Route path="/Injektionsbehandlingar" element={<Injektion />} />
           <Route path="/Bokatid" element={<BokaTid />} />

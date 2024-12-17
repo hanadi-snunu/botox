@@ -242,9 +242,43 @@ const Navbar = () => {
         </div>
       )}
     </li>
-    <li>
-      <Link to="/Priser">PRISER<FontAwesomeIcon icon={faChevronDown} /></Link>
+    
+    <li
+      onMouseEnter={() => handleDropdown("priser")}
+      onMouseLeave={() => handleDropdown(null)}
+      className="dropdown-container"
+    >
+       <Link to="/Priser">PRISER <FontAwesomeIcon icon={faChevronDown} /></Link>
+      {dropdownOpen === "priser" && (
+        <div className="full-width-dropdown">
+          <ul className="dropdown-grid">
+            <li>
+              <Link to="/injektionsbehandlingar-priser">INJEKTIONSBEHANDLINGAR</Link>
+            </li>
+            <li>
+              <Link to="/tradlyft-priser">TRÅDLYFT</Link>
+            </li>
+            <li>
+              <Link to="/laserbehandlingar-priser">LASERBEHANDLINGAR</Link>
+            </li>
+            <li>
+              <Link to="/ansiktsbehandlingar-priser">ANSIKTSBEHANDLINGAR</Link>
+              
+            </li>
+            <li>
+              <Link to="/hydra-facial-priser">HYDRA FACIAL</Link>
+            </li>
+            <li>
+              <Link to="/massage-priser">MASSAGE</Link>
+            </li>
+            <li>
+              <Link to="/vaxning-priser">VAXNING</Link>
+            </li>
+          </ul>
+        </div>
+      )}
     </li>
+
     <li>
       <Link to="/Omoss">OM OSS</Link>
     </li>
@@ -285,12 +319,20 @@ const Navbar = () => {
           <span className="arrow" onClick={() => openSubMenu("behandlingsutbud")}> <FontAwesomeIcon icon={faChevronRight} /></span>
         </div>
       </li>
-      <li><Link to="/Priser" onClick={toggleMenu}>PRISER</Link></li>
+      <li>
+        <div className="submenu-trigger">
+          <Link to="/Priser" onClick={toggleMenu}>PRISER</Link>
+          <span className="arrow" onClick={() => openSubMenu("priser")}>
+            <FontAwesomeIcon icon={faChevronRight} />
+          </span>
+        </div>
+      </li>
       <li><Link to="/Omoss" onClick={toggleMenu}>OM OSS</Link></li>
       <li><Link to="/Utbildningar" onClick={toggleMenu}>UTBILDNINGAR</Link></li>
       <li><Link to="/Kontakt" onClick={toggleMenu}>KONTAKT</Link></li>
       <li><Link to="/HittaBehandling" onClick={toggleMenu}>HITTA RÄTT BEHANDLING</Link></li>
     </ul>
+
   ) : subMenu === "behandlingsutbud" ? (
     <ul className="mobile-submenu">
       <li><Link to="/Injektionsbehandlingar" onClick={toggleMenu}>INJEKTIONSBEHANDLINGAR</Link></li>
@@ -385,7 +427,19 @@ const Navbar = () => {
       <li><Link to="/Overlapp+haka" onClick={toggleMenu}>Överläpp + haka</Link></li>
       <li><Link to="/Rygg" onClick={toggleMenu}>Rygg</Link></li>
     </ul>
+
+) : subMenu === "priser" ? (
+  <ul className="mobile-submenu">
+    <li><Link to="/injektionsbehandlingar-priser" onClick={toggleMenu}>INJEKTIONSBEHANDLINGAR</Link></li>
+    <li><Link to="/tradlyft-priser" onClick={toggleMenu}>TRÅDLYFT</Link></li>
+    <li><Link to="/laserbehandlingar-priser" onClick={toggleMenu}>LASERBEHANDLINGAR</Link></li>
+    <li><Link to="/ansiktsbehandlingar-priser" onClick={toggleMenu}>ANSIKTSBEHANDLINGAR</Link></li>
+    <li><Link to="/hydra-facial-priser" onClick={toggleMenu}>HYDRA FACIAL</Link></li>
+    <li><Link to="/massage-priser" onClick={toggleMenu}>MASSAGE</Link></li>
+    <li><Link to="/vaxning-priser" onClick={toggleMenu}>VAXNING</Link></li>
+  </ul>
   ) : null}
+  
 </div>
 
         </header>

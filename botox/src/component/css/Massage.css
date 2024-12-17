@@ -127,8 +127,9 @@
   /* HydraFacial: Text */
   .hydrafacial-info-text {
     font: 16px Mulish, sans-serif;
+     color: #666666;
     line-height: 1.8;
-    color: #666666;
+   
     margin: 0 100px 70px; /* Minskar marginalerna mellan stycken */
     text-align: justify;
   }

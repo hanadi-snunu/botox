@@ -1,21 +1,32 @@
-import React from 'react';
-
-
-import "../css/behandlingsutbud.css";
-import HeroImage from "../img/pic.jpg";
-import ConsultationImage from "../img/piccc.jpg";
+import React from "react";
+import PriceSection from "./PrisSection";
+import "../../../css/behandlingsutbud.css";
+import HeroImage from "../../../img/pic.jpg";
+import ConsultationImage from "../../../img/piccc.jpg";
 import { Link } from "react-router-dom";
 
-const Utbildning = () => {
+const InjektionsbehandlingarPris = () => {
+    const treatments = [
+        {
+          title: "-",
+          prices: [
+            { name: "-", ordPris: "-", arskort: "-" },
+            { name: "-", ordPris: "-", arskort: "-" },
+            { name: "-", ordPris: "-", arskort: "-" },
+            { name: "-", ordPris: "-", arskort: "-" },
+            { name: "-", ordPris: "-", arskort: "-" },
+          ],
+        },
+      ];
   return (
     <div>
       {/* Hero Section */}
       <div className="hero-section" style={{ backgroundImage: `url(${HeroImage})` }}>
         <div className="hero-overlay">
           <div className="hero-content">
-            <h1 className="hero-title"> Utbildningar</h1>
+            <h1 className="hero-title">Injektionsbehandlingar</h1>
             <p className="hero-subtitle">
-              Utforska våra utbildningar med professionell expertis.
+              Utforska våra injektionsbehandlingar med professionell expertis.
             </p>
             <Link to="/Bokatid" className="hero-button">
               Boka tid
@@ -24,11 +35,14 @@ const Utbildning = () => {
         </div>
       </div>
 
-<div>
-      <header>
-          <h1>Håll utkik, utbildningar kommer inom kort ..</h1>
-        </header>
-</div>
+      {/* Price Section */}
+      <div>
+      
+      {treatments.map((treatment, index) => (
+        <PriceSection key={index} title={treatment.title} prices={treatment.prices} />
+      ))}
+    </div>
+
       {/* Consultation Section */}
       <div
         className="consultation-section"
@@ -51,6 +65,6 @@ const Utbildning = () => {
       </div>
     </div>
   );
-}
+};
 
-export default Utbildning;
+export default InjektionsbehandlingarPris;

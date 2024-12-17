@@ -199,6 +199,8 @@ body, html {
 }
 
 
+
+
 /* Anpassa för mindre skärmar */
 @media (max-width: 768px) {
     /* Hero Section Anpassning */
@@ -317,3 +319,75 @@ body, html {
         margin-bottom: 20px; /* Ge varje plats en liten marginal */
     }
 }
+
+
+
+
+.price-section {
+    
+    margin: 20px auto;
+    padding: 10px;
+    max-width: 800px;
+  }
+  
+  .price-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding: 10px;
+    color: #333;
+  }
+  
+  .price-toggle {
+    font-size: 1.5rem;
+    color: #666;
+  }
+  
+  .pricing-table {
+    width: 100%;
+    border-collapse: collapse; /* Tar bort dubbla linjer */
+    margin: 20px auto; /* Centrerar tabellen och ger lite avstånd ovan/under */
+    font-family: Arial, sans-serif;
+    font-size: 16px; /* Gör texten lite större */
+  }
+  
+  .pricing-table th,
+  .pricing-table td {
+    padding: 15px 20px; /* Mer utrymme runt texten */
+    text-align: left;
+    border-bottom: 1px solid #ddd; /* Tunn gräns mellan rader */
+    font: 14px Mulish, sans-serif;
+    color: #333;
+  }
+  
+  .pricing-table th {
+    background-color: #f9f9f9; /* Ljus bakgrund för rubriker */
+    font-weight: bold;
+    font: 14px Mulish, sans-serif;
+    color: #333;
+  }
+  
+  .pricing-table tr:nth-child(even) {
+    background-color: #f2f2f2; /* Grå bakgrund för varannan rad */
+  }
+  
+  .pricing-table tr:nth-child(odd) {
+    background-color: #ffffff; /* Vit bakgrund för varannan rad */
+  }
+  
+  .pricing-table tr:hover {
+    background-color: #f1f1f1; /* Hover-effekt */
+    cursor: pointer;
+  }
+  
+  .price-title {
+    text-align: center;
+    font-size: 24px; /* Gör titeln snyggare */
+    margin-bottom: 20px; /* Avstånd under titeln */
+    font: 22px Mulish, sans-serif;
+    color: #666666;
+  }
+  
