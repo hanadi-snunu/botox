@@ -134,6 +134,9 @@ function App() {
           <Route path="/PRXT-33" element={<PRXT33 />} />
 
 
+
+
+
           <Route path="/Hittabehandling" element={<Hittabehandling />} />
           <Route path="/Kontakt" element={<Kontakt />} />
           <Route path="/Omoss" element={<Omoss />} />
